@@ -1,0 +1,13 @@
+:root {
+    --swiper-pagination-bullet-inactive-color:#ececec;
+    --swiper-pagination-bottom:0;
+}
+
+:root{
+    @media screen and (max-width: 550px) {
+        .sample-slider{
+            --swiper-pagination-top: 350px;
+        }
+
+    }
+}

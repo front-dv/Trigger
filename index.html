@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigger</title>
+    <link rel="stylesheet" href="asset/css/root.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="asset/boxicons-2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header background">
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body background">
+                    <ul class="navbar-nav   gap-3 ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="#markets">Домашняя страница</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#discover">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#collection">О компаниях</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#commonity">Наша работа</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#workers">О компании</a>
+                        </li>
+                    </ul>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Search</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body m-auto">
+
+                                    <form action="">
+                                        <div class="input-group">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                            </svg>
+                                            <input class=" ps-3 pe-3 " type="search">
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn px-3 py-2 rounded-top-0 background">Explor</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg" id="myHeader">
+            <div class="container">
+                <div class="logo position-relative">
+                    <img src="asset/img/trigger_logo.svg" class="nav-logo" alt="">
+                    <img src="asset/img/ellipse.svg" class="nav-shadow position-absolute" alt="">
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary d-lg-none" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Menu
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav   gap-3 ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="#markets">Домашняя страница</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#discover">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#collection">О компаниях</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#commonity">Наша работа</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#workers">О компании</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-outline-light px-3 py-2" type="submit">Исследуйте</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container mt-5">
+            <div class="row  align-items-center justify-content-center">
+                <div class="col-lg-6 col-10 order-2 order-lg-0">
+                    <div class="cards">
+                        <div class="card-body">
+                            <h5 class="fs-1 text-center text-lg-start fw-bold  text-white mb-4">Есть задача? <br
+                                    class="d-none d-lg-block"> У нас есть <br class="d-none d-lg-block"> <span
+                                    class="text-primary">Решение.</span></h5>
+                            <p class="card-text text-center text-lg-start text-white mb-4">Trigger - IT компания с
+                                широким спектром услуг. Мы <br class="d-none d-lg-block"> помогаем клиентам развивать
+                                свой бизнес</p>
+                            <div class="button d-flex justify-content-center justify-content-lg-start gap-4">
+                                <button class=" btn btn-primary px-3 py-2">Напишите нам</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1 d-none d-lg-block"></div>
+
+                <div class="col-lg-5 col-sm-10 col-12">
+                    <div class="imgs">
+                        <img src="asset/img/face.png" class="face mx-auto" alt="">
+                        <img src="asset/img/Ellipse.svg" class="shadow-img d-none d-xl-block" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="markets" id="markets">
+            <div class="container market">
+                <div class="row d-flex justify-content-start mb-5">
+                    <div class="col-12 d-sm-flex justify-content-between align-items-center">
+                        <div class="market-header position-relative mb-3">
+                            <h1 class="market-section text-white fs-1">Нам доверяют</h1>
+                            <img src="asset/img/ellipse.svg" alt="" class="market-shadow position-absolute">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper sample-slider position-relative">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/kapital.png" alt="" class="">
+                            </div>
+                        </div>
+  
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/asia.png" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/autostar.png" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/brouser.png" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/ginerl.svg" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/humo.png" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/ingo.svg" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/samsung.png" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/uzlife.svg" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/prizma.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/oson.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/infinity.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/epolis.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/autotrans.png" alt="" class="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sample-slide">
+                        <!--  Navigation buttons -->
+                        <div class="slidePrev-btn">
+                            <i class="bx bx-chevron-left"></i>
+                        </div>
+                        <div class="slideNext-btn">
+                            <i class="bx bx-chevron-right"></i>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="discover" id="discover">
+            <div class="container container-self">
+                <div class="swiper discover__swiper position-relative">
+                    <h1 class="fs-1 text-white mb-5">
+                        Статьи</h1>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card rounded-3 post overflow-hidden">
+                                <div class="card-top position-relative mb-4">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
+                                    <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
+                                        alt="">
+                                    <i class='bx bx-heart heart position-absolute'></i>
+                                </div>
+                                <div class="card-body text-white d-flex justify-content-between align-items-baseline">
+                                    <div class="card-left">
+                                        <h5 class="card-title fs-2">Имя</h5>
+                                        <h4 class="card-work mb-4">Позиция</h4>
+                                        <p class="card-subtitle">Информация</p>
+                                    </div>
+                                    <div class="right text-end">
+                                        <p class="card-text"><small class="text-white">Никто еще этого не видел</small>
+                                        </p>
+                                        <p class="card-text"><small class="text-white">add 12:00</small></p>
+                                        <button type="button" class="btn btn-outline-light ">Плецкая ставка</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card rounded-3 post overflow-hidden">
+                                <div class="card-top position-relative mb-4">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
+                                    <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
+                                        alt="">
+                                    <i class='bx bx-heart heart position-absolute'></i>
+                                </div>
+                                <div class="card-body text-white d-flex justify-content-between align-items-baseline">
+                                    <div class="card-left">
+                                        <h5 class="card-title fs-2">Имя</h5>
+                                        <h4 class="card-work mb-4">Позиция</h4>
+                                        <p class="card-subtitle">Информация</p>
+                                    </div>
+                                    <div class="right text-end">
+                                        <p class="card-text"><small class="text-white">Никто еще этого не видел</small>
+                                        </p>
+                                        <p class="card-text"><small class="text-white">add 12:00</small></p>
+                                        <button type="button" class="btn btn-outline-light ">Плецкая ставка</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card rounded-3 post overflow-hidden">
+                                <div class="card-top position-relative mb-4">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
+                                    <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
+                                        alt="">
+                                    <i class='bx bx-heart heart position-absolute'></i>
+                                </div>
+                                <div class="card-body text-white d-flex justify-content-between align-items-baseline">
+                                    <div class="card-left">
+                                        <h5 class="card-title fs-2">Имя</h5>
+                                        <h4 class="card-work mb-4">Позиция</h4>
+                                        <p class="card-subtitle">Информация</p>
+                                    </div>
+                                    <div class="right text-end">
+                                        <p class="card-text"><small class="text-white">Никто еще этого не видел</small>
+                                        </p>
+                                        <p class="card-text"><small class="text-white">add 12:00</small></p>
+                                        <button type="button" class="btn btn-outline-light ">Плецкая ставка</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card rounded-3 post overflow-hidden">
+                                <div class="card-top position-relative mb-4">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
+                                    <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
+                                        alt="">
+                                    <i class='bx bx-heart heart position-absolute'></i>
+                                </div>
+                                <div class="card-body text-white d-flex justify-content-between align-items-baseline">
+                                    <div class="card-left">
+                                        <h5 class="card-title fs-2">Имя</h5>
+                                        <h4 class="card-work mb-4">Позиция</h4>
+                                        <p class="card-subtitle">Информация</p>
+                                    </div>
+                                    <div class="right text-end">
+                                        <p class="card-text"><small class="text-white">Никто еще этого не видел</small>
+                                        </p>
+                                        <p class="card-text"><small class="text-white">add 12:00</small></p>
+                                        <button type="button" class="btn btn-outline-light ">Плецкая ставка</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--  Navigation buttons -->
+                    <div class="slidePrev-btn">
+                        <i class="bx bx-chevron-left"></i>
+                    </div>
+                    <div class="slideNext-btn">
+                        <i class="bx bx-chevron-right"></i>
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="collection" id="collection">
+            <div class="container ">
+                <div class="col-12 d-flex justify-content-start align-items-center">
+                    <div class="collection-top  position-relative">
+                        <h1 class=" text-white fs-1">Наши работы</h1>
+                        <img src="asset/img/ellipse.svg" alt="" class="collection-shadow position-absolute">
+                    </div>
+                </div>
+
+                <div class="swiper collection__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/black.jpg" class="collection-img" alt="...">
+                                <div class="card-bottom d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title">Kapital sug'urta</h5>
+                                    <a href="https://kapitalsugurta.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/cadfbae.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title">Ingo</h5>
+                                    <a href="https://ingo.uz/" target="_blank"><i class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/gestural.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Perfect Insurance</h5>
+                                    <a href="https://perfectins.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/wall.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Oybek-Avtotrans</h5>
+                                    <a href="http://oybek-avtotrans.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/variours.jpg" class="collection-img" alt="...">
+                                <div class="card-bottom d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title">Avtostar Berkut</h5>
+                                    <a href="http://avtostar-berkut.uz/" target="_blank"><i
+                                            class="bx bx-link-alt  colliction-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/meow.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">General Insurance</h5>
+                                    <a href="https://ddgi.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/brothers.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Brothers travel</h5>
+                                    <a href="http://brothers-transport-travel.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/omad.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Omad Avia Turizm</h5>
+                                    <a href="http://omadavia.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/oson.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Oson Sug'urta</h5>
+                                    <a href="https://osonsugurta.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/human.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Inson</h5>
+                                    <a href="https://e-inson.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="commonity" id="commonity">
+            <div class="container">
+                <h1 class=" fs-1 text-white mb-5">Наши сотрудники</h1>
+                <nav>
+                    <div class="nav nav-tabs mb-5 gap-3" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Сотрудники
+                        </button>
+
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Практикующие
+                        </button>
+                </nav>
+                <div class="tab-content text-center" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div
+                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                <div class="dream-card" style="width: 18rem;">
+                                    <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                        <div class="dream-left">
+                                            <h5 class="dream-title text-white">Имя</h5>
+                                            <p class="dream-text text-white"> Профессия</p>
+                                        </div>
+                                        <div class="dream-right text-end">
+                                            <h5 class="card-time text-white">add2:30</h5>
+                                            <button
+                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                    class='bx bx-heart'></i>
+                                                <span>1k</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                <div class="dream-card" style="width: 18rem;">
+                                    <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                        <div class="dream-left">
+                                            <h5 class="dream-title text-white">Имя</h5>
+                                            <p class="dream-text text-white">Профессия</p>
+                                        </div>
+                                        <div class="dream-right text-end">
+                                            <h5 class="card-time text-white">add2:30</h5>
+                                            <button
+                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                    class='bx bx-heart'></i>
+                                                <span>1k</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                <div class="dream-card" style="width: 18rem;">
+                                    <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                        <div class="dream-left">
+                                            <h5 class="dream-title text-white"> Имя</h5>
+                                            <p class="dream-text text-white"> Профессия</p>
+                                        </div>
+                                        <div class="dream-right text-end">
+                                            <h5 class="card-time text-white">add2:30</h5>
+                                            <button
+                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                    class='bx bx-heart'></i>
+                                                <span>1k</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                <div class="dream-card" style="width: 18rem;">
+                                    <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                        <div class="dream-left">
+                                            <h5 class="dream-title text-white">Имя</h5>
+                                            <p class="dream-text text-white"> Профессия</p>
+                                        </div>
+                                        <div class="dream-right text-end">
+                                            <h5 class="card-time text-white">add2:30</h5>
+                                            <button
+                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                    class='bx bx-heart'></i>
+                                                <span>1k</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div
+                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                <div class="dream-card" style="width: 18rem;">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top mb-3" alt="...">
+                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                        <div class="dream-left">
+                                            <h5 class="dream-title text-white">Имя</h5>
+                                            <p class="dream-text text-white">Профессия</p>
+                                        </div>
+                                        <div class="dream-right text-end">
+                                            <h5 class="card-time text-white">add2:30</h5>
+                                            <button
+                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                    class='bx bx-heart'></i>
+                                                <span>1k</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                <div class="dream-card" style="width: 18rem;">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top mb-3" alt="...">
+                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                        <div class="dream-left">
+                                            <h5 class="dream-title text-white">Имя</h5>
+                                            <p class="dream-text text-white">Профессия</p>
+                                        </div>
+                                        <div class="dream-right text-end">
+                                            <h5 class="card-time text-white">add2:30</h5>
+                                            <button
+                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                    class='bx bx-heart'></i>
+                                                <span>1k</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                <div class="dream-card" style="width: 18rem;">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top mb-3" alt="...">
+                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                        <div class="dream-left">
+                                            <h5 class="dream-title text-white">Имя</h5>
+                                            <p class="dream-text text-white">Профессия</p>
+                                        </div>
+                                        <div class="dream-right text-end">
+                                            <h5 class="card-time text-white">add2:30</h5>
+                                            <button
+                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                    class='bx bx-heart'></i>
+                                                <span>1k</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                <div class="dream-card" style="width: 18rem;">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top mb-3" alt="...">
+                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                        <div class="dream-left">
+                                            <h5 class="dream-title text-white">Имя</h5>
+                                            <p class="dream-text text-white">Профессия</p>
+                                        </div>
+                                        <div class="dream-right text-end">
+                                            <h5 class="card-time text-white">add2:30</h5>
+                                            <button
+                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                    class='bx bx-heart'></i>
+                                                <span>1k</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn work-button fs-6 text-white mt-5">Узнать подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="workers" id="workers">
+            <div class="container">
+                <div class="work row align-items-center justify-content-between">
+
+                    <div class="col-xl-4 col-12 text-lg-center text-start text-xl-start">
+                        <div class="text-start">
+                            <h5 class="work-body-title text-start mb-3">Услуги</h5>
+                            <p class="work-body-text ">Начало работы и продажа Nfts. Изучите весь процесс, чтобы не
+                                запутаться.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="row row-gap-xl-4 row-gap-5 mb-5 justify-content-center align-items-stretch">
+                            <div class="col-md-6 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <i class='bx bx-desktop pt-1 pb-1 ps-2 pe-2 mb-2'></i>
+                                        <h6 class="work-subtitle mb-2 ">Web-сайты</h6>
+                                        <p class="work-text">Мы предоставляем такие решения, как полная разработка
+                                            сайтов, разработка стратегии, комплексное продвижение в поисковых и
+                                            социальных сетях.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <i class='bx bx-mobile-alt pt-1 pb-1 ps-2 pe-2 mb-2'></i>
+                                        <h6 class="work-subtitle mb-2 ">Мобильные приложения</h6>
+                                        <p class="work-text">Мы создадим программное обеспечение, необходимое для
+                                            развития вашего бизнеса.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <i class='bx bx-bot pt-1 pb-1 ps-2 pe-2 mb-2'></i>
+                                        <h6 class="work-subtitle mb-2 ">Telegram-боты</h6>
+                                        <p class="work-text">Мы создаем многофункциональных, быстрых и надежных ботов
+                                            Telegram..</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <i class='bx bx-shield-plus pt-1 pb-1 ps-2 pe-2 mb-2'></i>
+                                        <h6 class="work-subtitle mb-2 ">Система управления страхованием</h6>
+                                        <p class="work-text">Мы создаем программное обеспечение, необходимое для
+                                            развития вашего страхового бизнеса.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-flex justify-content-center">
+                        <button class="work-button border-0"><a href="#" class="fs-6 text-white">Узнать подробнее</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="container">
+            <div class="row g-5 digital justify-content-center d-none">
+                <div class="col-lg-8 col-md-10 col-xl-6 mt-5 mb-5 order-2 digital-creator ">
+                    <h1 class="text-white text-center text-lg-start">Are you a digital creator?</h1>
+                    <p class="text-white text-center text-lg-start">Learn how Marketplace helps you protect and sell
+                        your
+                        unique digital creations, and join our growing community of thousand digital creators </p>
+
+                    <div class="digital-group d-flex justify-content-center w-100 mb-3 position-relative"
+                        style="height: 56px;">
+                        <!-- input-group  -->
+                        <div class="w-100 h-100">
+                            <input type="email" class="digital-input w-50 py-3 ms-4 z-index-0 rounded-5"
+                                placeholder="Enter email" aria-label="Enter email">
+                            <button
+                                class="btn rounded-5 px-3 py-1 z-index-1 d-flex align-items-center fs-7 position-absolute end-10-px  absolute-centered">
+                                Get
+                                started
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-lg-4 col-xl-5 d-flex justify-content-center justify-content-xl-center mt-2 mb-2 order-lg-3  ">
+                    <img src="asset/img/polygon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row justify-content-between gx-xl-5">
+
+                    <div class="col-md-6 col-xl-3 col-sm-6 col-12 mb-5 gx-5">
+                        <h1 class="text-white fs-1 lh-sm mb-4" fw-semibold">Trigger</h1>
+                        <p class="text-white fw-light lh-base">Крупнейшая в мире цифровая площадка для
+                            коллекционирования криптовалют и не токенов (NFT). Покупайте, продавайте и открывайте для
+                            себя эксклюзивные цифровые активы.</p>
+                        <div class="footer-icons mt-4">
+                            <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+                            <a href="https://gitlab.com/"><i class='bx bxl-gitlab'></i></a>
+                            <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://web.telegram.org/a/"><i class='bx bxl-telegram'></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-8 col-sm-6 col-12">
+                        <div class="row justify-content-sm-end ">
+                            <div class="col-xl-2 col-lg-3 col-6 d-none">
+                                <h4>Explore</h4>
+                                <ul class="p-0">
+                                    <li><a href="#">Art</a></li>
+                                    <li><a href="#">Photography</a></li>
+                                    <li><a href="#">Music</a></li>
+                                    <li><a href="#">Games</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-3 col-6 d-none">
+                                <h4>My Account</h4>
+                                <ul class="p-0">
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">My collections</a></li>
+                                    <li><a href="#">My Favorites</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-3 col-6 d-none">
+                                <h4>Resourses</h4>
+
+                                <ul class="p-0">
+                                    <li><a href="#">Help Centre</a></li>
+                                    <li><a href="#">Parthers</a></li>
+                                    <li><a href="#">Suggestions</a></li>
+                                    <li><a href="#">Newsletter</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-3 col-8">
+                                <h4>Company</h4>
+                                <ul class="p-0">
+                                    <li><a href="#markets">Домашняя страница</a></li>
+                                    <li><a href="#discover">Статьи</a></li>
+                                    <li><a href="#collection">О компаниях</a></li>
+                                    <li><a href="#commonity">Наша работа</a></li>
+                                    <!-- <li><a href="#workers">О компании</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="asset/js/swiper-bundle.min.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
