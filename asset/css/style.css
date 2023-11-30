@@ -11,7 +11,8 @@ html {
 }
 
 body,
-.background {
+.background,
+.bground {
     background: rgba(31, 23, 33, 1);
 }
 
@@ -134,7 +135,7 @@ img {
 }
 
 .market-shadow {
-    top: -2.5rem;
+    top: -6rem;
     z-index: -1;
 }
 
@@ -163,11 +164,6 @@ img {
 
 .commonity .nav-tabs .nav-link {
     border: initial;
-}
-
-.markets .swiper-pagination-bullet.swiper-pagination-bullet-active,
-.discover .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: rgba(166, 88, 179, 1);
 }
 
 .sample-slider .slidePrev-btn,
@@ -215,13 +211,33 @@ img {
     width: 100%;
 }
 
-.heart {
+.heart-group{
     top: 1rem;
     right: 1rem;
-    padding: 1rem 1.2rem;
-    background: rgba(255, 0, 0, 0.54);
+    padding: .7rem 1rem;
+    background: rgba(99, 99, 99, 0.54);
     border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-group i{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.heart-group .heart-hover{
+    display: none;
+}
+
+.heart-group:hover .heart-hover{
+    display: block;
+}
+
+.heart-group:hover .heart{
+    display: none;
 }
 
 .jimmy {

@@ -25,7 +25,8 @@
                 <div class="modal-body background">
                     <ul class="navbar-nav   gap-3 ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link text-white active" aria-current="page" href="#markets">Домашняя страница</a>
+                            <a class="nav-link text-white active" aria-current="page" href="#markets">Домашняя
+                                страница</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#discover">Статьи</a>
@@ -78,6 +79,31 @@
     </div>
     </div>
 
+
+    <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body background">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-white">Электронный адрес</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label text-white">Сообщение:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer background">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрывать</button>
+                    <button type="button" class="btn btn-primary">Отправить сообщение</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav class="navbar navbar-expand-lg" id="myHeader">
             <div class="container">
@@ -94,7 +120,8 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav   gap-3 ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link text-white active" aria-current="page" href="#markets">Домашняя страница</a>
+                            <a class="nav-link text-white active" aria-current="page" href="#markets">Домашняя
+                                страница</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#discover">Статьи</a>
@@ -110,7 +137,8 @@
                         </li>
                     </ul>
                     <!-- Button trigger modal -->
-                    <button class="btn btn-outline-light px-3 py-2" type="submit">Исследуйте</button>
+                    <button type="button" class="btn btn-outline-light px-3 py-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModals" data-bs-whatever="@fat">Связаться с нами</button>
                 </div>
             </div>
         </nav>
@@ -159,85 +187,88 @@
                 </div>
 
                 <div class="swiper sample-slider position-relative">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper d-flex justify-content-between">
 
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/kapital.png" alt="" class="">
                             </div>
                         </div>
-  
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+
+
+                        <div class="swiper-slide">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/infinity.svg" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/asia.png" alt="" class="">
                             </div>
                         </div>
 
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
-                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
-                                <img src="asset/img/autostar.png" alt="" class="">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
-                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
-                                <img src="asset/img/brouser.png" alt="" class="">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
-                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
-                                <img src="asset/img/ginerl.svg" alt="" class="">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
-                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
-                                <img src="asset/img/humo.png" alt="" class="">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
-                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
-                                <img src="asset/img/ingo.svg" alt="" class="">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
-                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
-                                <img src="asset/img/samsung.png" alt="" class="">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/uzlife.svg" alt="" class="">
                             </div>
                         </div>
 
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <div class="swiper-slide">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/ingo.svg" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/humo.png" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/ginerl.svg " alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/samsung.png" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/prizma.svg" alt="" class="">
                             </div>
                         </div>
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/oson.svg" alt="" class="">
                             </div>
                         </div>
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+
+                        <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
-                                <img src="asset/img/infinity.svg" alt="" class="">
+                                <img src="asset/img/brouser.png" alt="" class="">
                             </div>
                         </div>
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+
+                        <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/epolis.svg" alt="" class="">
                             </div>
                         </div>
-                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/autotrans.png" alt="" class="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
+                                <img src="asset/img/autostar.png" alt="" class="">
                             </div>
                         </div>
                     </div>
@@ -271,7 +302,10 @@
                                     <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
                                     <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
                                         alt="">
-                                    <i class='bx bx-heart heart position-absolute'></i>
+                                    <div class="heart-group position-absolute">
+                                        <i class='bx bx-heart heart'></i>
+                                        <i class='bx bxs-heart heart-hover'></i>
+                                    </div>
                                 </div>
                                 <div class="card-body text-white d-flex justify-content-between align-items-baseline">
                                     <div class="card-left">
@@ -295,7 +329,10 @@
                                     <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
                                     <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
                                         alt="">
-                                    <i class='bx bx-heart heart position-absolute'></i>
+                                    <div class="heart-group position-absolute">
+                                        <i class='bx bx-heart heart'></i>
+                                        <i class='bx bxs-heart heart-hover'></i>
+                                    </div>
                                 </div>
                                 <div class="card-body text-white d-flex justify-content-between align-items-baseline">
                                     <div class="card-left">
@@ -319,7 +356,10 @@
                                     <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
                                     <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
                                         alt="">
-                                    <i class='bx bx-heart heart position-absolute'></i>
+                                    <div class="heart-group position-absolute">
+                                        <i class='bx bx-heart heart'></i>
+                                        <i class='bx bxs-heart heart-hover'></i>
+                                    </div>
                                 </div>
                                 <div class="card-body text-white d-flex justify-content-between align-items-baseline">
                                     <div class="card-left">
@@ -343,7 +383,10 @@
                                     <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
                                     <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
                                         alt="">
-                                    <i class='bx bx-heart heart position-absolute'></i>
+                                    <div class="heart-group position-absolute">
+                                        <i class='bx bx-heart heart'></i>
+                                        <i class='bx bxs-heart heart-hover'></i>
+                                    </div>
                                 </div>
                                 <div class="card-body text-white d-flex justify-content-between align-items-baseline">
                                     <div class="card-left">
@@ -402,21 +445,9 @@
 
                         <div class="swiper-slide">
                             <div class="collection-card">
-                                <img src="asset/img/cadfbae.jpg" class="collection-img" alt="...">
-                                <div class="card-body d-flex justify-content-between mt-3 ms-2 me-2">
-                                    <h5 class="collection-title">Ingo</h5>
-                                    <a href="https://ingo.uz/" target="_blank"><i class='bx bx-link-alt  colliction-icon'></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="collection-card">
                                 <img src="asset/img/gestural.jpg" class="collection-img" alt="...">
                                 <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
-                                    <h5 class="collection-title ">Perfect Insurance</h5>
+                                    <h5 class="collection-title ">Infinity Insurance</h5>
                                     <a href="https://perfectins.uz/" target="_blank"><i
                                             class='bx bx-link-alt  colliction-icon'></i></a>
                                 </div>
@@ -425,23 +456,43 @@
 
                         <div class="swiper-slide">
                             <div class="collection-card">
-                                <img src="asset/img/wall.jpg" class="collection-img" alt="...">
+                                <img src="asset/img/asia-insurance.jpg" class="collection-img" alt="...">
                                 <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
-                                    <h5 class="collection-title ">Oybek-Avtotrans</h5>
-                                    <a href="http://oybek-avtotrans.uz/" target="_blank"><i
+                                    <h5 class="collection-title ">Asia Insurance</h5>
+                                    <a href="https://www.asiainsurance.uz/" target="_blank"><i
                                             class='bx bx-link-alt  colliction-icon'></i></a>
                                 </div>
                             </div>
                         </div>
 
-
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/human.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Inson</h5>
+                                    <a href="https://e-inson.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="swiper-slide">
                             <div class="collection-card">
-                                <img src="asset/img/variours.jpg" class="collection-img" alt="...">
+                                <img src="asset/img/cadfbae.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title">Ingo</h5>
+                                    <a href="https://ingo.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/humosug'urta.jpg" class="collection-img" alt="...">
                                 <div class="card-bottom d-md-flex justify-content-between mt-3 ms-2 me-2">
-                                    <h5 class="collection-title">Avtostar Berkut</h5>
-                                    <a href="http://avtostar-berkut.uz/" target="_blank"><i
+                                    <h5 class="collection-title">Humo Sug'urta</h5>
+                                    <a href="https://www.humosugurta.uz/" target="_blank"><i
                                             class="bx bx-link-alt  colliction-icon"></i></a>
                                 </div>
                             </div>
@@ -457,6 +508,29 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/samsung.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Samsung</h5>
+                                    <a href="https://www.samsung.com/uz_ru/" target="_blank"><i
+                                         class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <img src="asset/img/oson.jpg" class="collection-img" alt="...">
+                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title ">Oson Sug'urta</h5>
+                                    <a href="https://osonsugurta.uz/" target="_blank"><i
+                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="swiper-slide">
                             <div class="collection-card">
@@ -482,21 +556,21 @@
 
                         <div class="swiper-slide">
                             <div class="collection-card">
-                                <img src="asset/img/oson.jpg" class="collection-img" alt="...">
-                                <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
-                                    <h5 class="collection-title ">Oson Sug'urta</h5>
-                                    <a href="https://osonsugurta.uz/" target="_blank"><i
-                                            class='bx bx-link-alt  colliction-icon'></i></a>
+                                <img src="asset/img/variours.jpg" class="collection-img" alt="...">
+                                <div class="card-bottom d-md-flex justify-content-between mt-3 ms-2 me-2">
+                                    <h5 class="collection-title">Avtostar Berkut</h5>
+                                    <a href="http://avtostar-berkut.uz/" target="_blank"><i
+                                            class="bx bx-link-alt  colliction-icon"></i></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="collection-card">
-                                <img src="asset/img/human.jpg" class="collection-img" alt="...">
+                                <img src="asset/img/wall.jpg" class="collection-img" alt="...">
                                 <div class="card-body d-md-flex justify-content-between mt-3 ms-2 me-2">
-                                    <h5 class="collection-title ">Inson</h5>
-                                    <a href="https://e-inson.uz/" target="_blank"><i
+                                    <h5 class="collection-title ">Oybek-Avtotrans</h5>
+                                    <a href="http://oybek-avtotrans.uz/" target="_blank"><i
                                             class='bx bx-link-alt  colliction-icon'></i></a>
                                 </div>
                             </div>
@@ -529,89 +603,117 @@
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
                         tabindex="0">
                         <div class="row">
-                            <div
-                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
-                                <div class="dream-card" style="width: 18rem;">
-                                    <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
-                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
-                                        <div class="dream-left">
-                                            <h5 class="dream-title text-white">Имя</h5>
-                                            <p class="dream-text text-white"> Профессия</p>
-                                        </div>
-                                        <div class="dream-right text-end">
-                                            <h5 class="card-time text-white">add2:30</h5>
-                                            <button
-                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
-                                                    class='bx bx-heart'></i>
-                                                <span>1k</span>
-                                            </button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
-                                <div class="dream-card" style="width: 18rem;">
-                                    <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
-                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
-                                        <div class="dream-left">
-                                            <h5 class="dream-title text-white">Имя</h5>
-                                            <p class="dream-text text-white">Профессия</p>
-                                        </div>
-                                        <div class="dream-right text-end">
-                                            <h5 class="card-time text-white">add2:30</h5>
-                                            <button
-                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
-                                                    class='bx bx-heart'></i>
-                                                <span>1k</span>
-                                            </button>
-
+                            <div class="swiper commonity-swiper">
+                                <div class="swiper-wrapper justify-content-between">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
+                                            <div class="dream-card" style="width: 20rem;">
+                                                <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                                <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                                    <div class="dream-left">
+                                                        <h5 class="dream-title text-white">Имя</h5>
+                                                        <p class="dream-text text-white"> Профессия</p>
+                                                    </div>
+                                                    <div class="dream-right text-end">
+                                                        <h5 class="card-time text-white">add2:30</h5>
+                                                        <button
+                                                            class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                                class='bx bx-heart'></i>
+                                                            <span>1k</span>
+                                                        </button>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
-                                <div class="dream-card" style="width: 18rem;">
-                                    <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
-                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
-                                        <div class="dream-left">
-                                            <h5 class="dream-title text-white"> Имя</h5>
-                                            <p class="dream-text text-white"> Профессия</p>
-                                        </div>
-                                        <div class="dream-right text-end">
-                                            <h5 class="card-time text-white">add2:30</h5>
-                                            <button
-                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
-                                                    class='bx bx-heart'></i>
-                                                <span>1k</span>
-                                            </button>
-
+                                    <div class="swiper-slide">
+                                        <div class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
+                                            <div class="dream-card" style="width: 20rem;">
+                                                <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                                <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                                    <div class="dream-left">
+                                                        <h5 class="dream-title text-white">Имя</h5>
+                                                        <p class="dream-text text-white"> Профессия</p>
+                                                    </div>
+                                                    <div class="dream-right text-end">
+                                                        <h5 class="card-time text-white">add2:30</h5>
+                                                        <button
+                                                            class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                                class='bx bx-heart'></i>
+                                                            <span>1k</span>
+                                                        </button>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
+                                            <div class="dream-card" style="width: 20rem;">
+                                                <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                                <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                                    <div class="dream-left">
+                                                        <h5 class="dream-title text-white">Имя</h5>
+                                                        <p class="dream-text text-white">Профессия</p>
+                                                    </div>
+                                                    <div class="dream-right text-end">
+                                                        <h5 class="card-time text-white">add2:30</h5>
+                                                        <button
+                                                            class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                                class='bx bx-heart'></i>
+                                                            <span>1k</span>
+                                                        </button>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
-                                <div class="dream-card" style="width: 18rem;">
-                                    <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
-                                    <div class="dream-card-body d-flex justify-content-between align-items-baseline">
-                                        <div class="dream-left">
-                                            <h5 class="dream-title text-white">Имя</h5>
-                                            <p class="dream-text text-white"> Профессия</p>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
+                                            <div class="dream-card" style="width: 20rem;">
+                                                <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                                <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                                    <div class="dream-left">
+                                                        <h5 class="dream-title text-white"> Имя</h5>
+                                                        <p class="dream-text text-white"> Профессия</p>
+                                                    </div>
+                                                    <div class="dream-right text-end">
+                                                        <h5 class="card-time text-white">add2:30</h5>
+                                                        <button
+                                                            class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                                class='bx bx-heart'></i>
+                                                            <span>1k</span>
+                                                        </button>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="dream-right text-end">
-                                            <h5 class="card-time text-white">add2:30</h5>
-                                            <button
-                                                class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
-                                                    class='bx bx-heart'></i>
-                                                <span>1k</span>
-                                            </button>
-
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
+                                            <div class="dream-card" style="width: 20rem;">
+                                                <img src="asset/img/jimmy.jpg" class="card-img-top mb-3" alt="...">
+                                                <div class="dream-card-body d-flex justify-content-between align-items-baseline">
+                                                    <div class="dream-left">
+                                                        <h5 class="dream-title text-white">Имя</h5>
+                                                        <p class="dream-text text-white"> Профессия</p>
+                                                    </div>
+                                                    <div class="dream-right text-end">
+                                                        <h5 class="card-time text-white">add2:30</h5>
+                                                        <button
+                                                            class="dream-button bg-transparent ps-4 pe-4 rounded-pill text-white"><i
+                                                                class='bx bx-heart'></i>
+                                                            <span>1k</span>
+                                                        </button>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -623,7 +725,7 @@
                         tabindex="0">
                         <div class="row">
                             <div
-                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
                                 <div class="dream-card" style="width: 18rem;">
                                     <img src="asset/img/alesia.jpg" class="card-img-top mb-3" alt="...">
                                     <div class="dream-card-body d-flex justify-content-between align-items-baseline">
@@ -645,7 +747,7 @@
                             </div>
 
                             <div
-                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
                                 <div class="dream-card" style="width: 18rem;">
                                     <img src="asset/img/alesia.jpg" class="card-img-top mb-3" alt="...">
                                     <div class="dream-card-body d-flex justify-content-between align-items-baseline">
@@ -667,7 +769,7 @@
                             </div>
 
                             <div
-                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
                                 <div class="dream-card" style="width: 18rem;">
                                     <img src="asset/img/alesia.jpg" class="card-img-top mb-3" alt="...">
                                     <div class="dream-card-body d-flex justify-content-between align-items-baseline">
@@ -689,7 +791,7 @@
                             </div>
 
                             <div
-                                class="d-flex justify-content-center col-md-6 col-lg-3 col-sm-12 col-sm-3 col-lg-6 col-xl-4 col-xxl-3 mb-4 mb-lg-4 mb-xxl-0 ">
+                                class="d-flex justify-content-between  mb-4 mb-lg-4 mb-xxl-0 ">
                                 <div class="dream-card" style="width: 18rem;">
                                     <img src="asset/img/alesia.jpg" class="card-img-top mb-3" alt="...">
                                     <div class="dream-card-body d-flex justify-content-between align-items-baseline">
