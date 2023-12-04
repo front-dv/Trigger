@@ -304,6 +304,7 @@ img {
     height: calc(calc(320px * 2) + 30px);
     padding-bottom: 50px;
     box-sizing: content-box;
+    display: flex;
 }
 
 .collection .swiper-pagination-bullet {
@@ -563,6 +564,13 @@ img {
         height: 23%;
     }
 
+    .post button{
+        color: white;
+        font-size: 14px;
+        padding: 5px;
+        border: 1px solid white;
+    }
+
 }
 
 @media screen and (max-width: 993px) {
@@ -666,11 +674,19 @@ img {
     .collection-title{
         font-size: 16px;
     }
+
+    .collection-card{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 416px) {
     .commonity .nav-link {
         font-size: 16px;
+    }
+
+    .collection-card{
+        width: 100%;
     }
 }
 

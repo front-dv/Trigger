@@ -127,7 +127,7 @@ const swiper3 = new Swiper(".collection__swiper", {
     spaceBetween: 30,
     autoplay: {
         delay: 2500,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
       },
     pagination: {
         el: '.swiper-pagination',
@@ -145,7 +145,7 @@ const swiper3 = new Swiper(".collection__swiper", {
         },
         // when window width is >= 480px
         480: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30
         },
         // when window width is >= 640px
@@ -171,14 +171,48 @@ const swiper3 = new Swiper(".collection__swiper", {
 
 const swiper4 = new Swiper(".commonity-swiper", {
     slidesPerView: 4,
-    centeredSlides: true,
+    centeredSlides: false,
     slidesPerGroup: 1,
-    spaceBetween: 40,
+    spaceBetween: 20,
     loop:  true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        grid: {
+            rows: 2,
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        // when window width is <= 999px
+            999: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 30
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 30
+        },
+    }
   });
 
 
