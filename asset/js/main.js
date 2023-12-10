@@ -161,11 +161,7 @@ const swiper3 = new Swiper(".collection__swiper", {
             999: {
             slidesPerView: 3,
             spaceBetweenSlides: 30
-        },
-        1200: {
-            slidesPerView: 4,
-            spaceBetweenSlides: 30
-        },
+        }
     }
 })
 
