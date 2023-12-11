@@ -25,7 +25,7 @@ const swiper1 = new Swiper(".sample-slider", {
     scrollbar: '.swiper-scrollbar',
     autoplay: {
         delay: 2500,
-        disableOnInteraction: false,
+        disableOnInteraction: false,   
       },
     pagination: {
         el: '.swiper-pagination',
@@ -96,21 +96,15 @@ const swiper2 = new Swiper(".discover__swiper", {
                 slidesPerView: 1,
                 spaceBetween: 60,
             },
-            // when window width is >= 480px
-            480: {
+            720: {
                 slidesPerView: 1,
-                spaceBetween: 60
-            },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 60
-            },
-            768: {
+                spaceBetween: 60,
+              },
+              750:{
                 slidesPerView: 2,
                 spaceBetween: 60,
               },
-            999:{
+            1024:{
                 slidesPerView: 3,
                 spaceBetween: 60, 
             }
@@ -144,24 +138,23 @@ const swiper3 = new Swiper(".collection__swiper", {
             rows: 2,
         },
         // when window width is >= 480px
-        480: {
-            slidesPerView: 1,
-            spaceBetween: 30
-        },
+        // 480: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 30
+        // },
         // when window width is >= 640px
         640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30
         },
         768: {
             slidesPerView: 2,
             spaceBetween: 30,
           },
-        // when window width is <= 999px
-            999: {
+        1024: {
             slidesPerView: 3,
             spaceBetweenSlides: 30
-        }
+        },
     }
 })
 

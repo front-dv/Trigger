@@ -118,19 +118,18 @@
         </div>
       </div>
 
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="modal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+      <div class="modal fade" id="articles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <div class="modal-header background">
+              <h1 class="modal-title fs-5 text-white id="exampleModalLabel">Modal title</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body background text-white">
               ...
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Understood</button>
+            <div class="modal-footer background">
+              <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
@@ -285,11 +284,11 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <!-- <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/epolis.svg" alt="" class="">
                             </div>
-                        </div>
+                        </div> -->
                         <div class="swiper-slide">
                             <div class="swiper-img d-flex align-items-center justify-content-center bg-white rounded-5">
                                 <img src="asset/img/autotrans.png" alt="" class="">
@@ -339,13 +338,12 @@
                                 <div class="card-body text-white d-flex justify-content-between ">
                                     <div class="card-left">
                                         <h4 class="card-title fs-2">Заголовок</h4>
-                                        <h4 class="card-work mb-4">Позиция</h4>
-                                        <p class="card-subtitle">Информация</p>
+                                        <h4 class="card-work mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
                                         <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span>0</span></div>
                                         <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span>данные</span></div>
-                                        <button type="button" class="bg-transparent rounded-pill mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">подробнее</button>
+                                        <button type="button" class="bg-transparent rounded-pill mt-3" data-bs-toggle="modal" data-bs-target="#articles">подробнее</button>      
                                     </div>
                                 </div>
                             </div>
@@ -365,34 +363,7 @@
                                 <div class="card-body text-white d-flex justify-content-between ">
                                     <div class="card-left">
                                         <h4 class="card-title fs-2">Заголовок</h4>
-                                        <h4 class="card-work mb-4">Позиция</h4>
-                                        <p class="card-subtitle">Информация</p>
-                                    </div>
-                                    <div class="right text-end">
-                                        <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span>0</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span>данные</span></div>
-                                        <button type="button" class="bg-transparent rounded-pill mt-3">подробнее</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
-                                <div class="card-top position-relative mb-4">
-                                    <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
-                                    <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
-                                        alt="">
-                                    <div class="heart-group position-absolute">
-                                        <i class='bx bx-heart heart'></i>
-                                        <i class='bx bxs-heart heart-hover'></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-white d-flex justify-content-between ">
-                                    <div class="card-left">
-                                        <h4 class="card-title fs-2">Заголовок</h4>
-                                        <h4 class="card-work mb-4">Позиция</h4>
-                                        <p class="card-subtitle">Информация</p>
+                                        <h4 class="card-work mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
                                         <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span>0</span></div>
@@ -417,8 +388,32 @@
                                 <div class="card-body text-white d-flex justify-content-between ">
                                     <div class="card-left">
                                         <h4 class="card-title fs-2">Заголовок</h4>
-                                        <h4 class="card-work mb-4">Позиция</h4>
-                                        <p class="card-subtitle">Информация</p>
+                                        <h4 class="card-work mt-4">Позиция</h4>
+                                    </div>
+                                    <div class="right text-end">
+                                        <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span>0</span></div>
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span>данные</span></div>
+                                        <button type="button" class="bg-transparent rounded-pill mt-3">подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
+                                <div class="card-top position-relative mb-4">
+                                    <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
+                                    <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
+                                        alt="">
+                                    <div class="heart-group position-absolute">
+                                        <i class='bx bx-heart heart'></i>
+                                        <i class='bx bxs-heart heart-hover'></i>
+                                    </div>
+                                </div>
+                                <div class="card-body text-white d-flex justify-content-between ">
+                                    <div class="card-left">
+                                        <h4 class="card-title fs-2">Заголовок</h4>
+                                        <h4 class="card-work mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
                                         <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span>0</span></div>

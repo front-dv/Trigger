@@ -701,6 +701,12 @@ img {
     .collection-card{
         width: 100%;
     }
+    .discover__swiper {
+        width: 100%;
+        margin-bottom: 4rem;
+        box-sizing: border-box;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -718,12 +724,5 @@ img {
 
     .commonity .nav-link {
         font-size: 12px;
-    }
-
-    .discover__swiper {
-        width: 100%;
-        margin-bottom: 4rem;
-        box-sizing: border-box;
-        padding: 0;
     }
 }
