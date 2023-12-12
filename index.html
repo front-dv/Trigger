@@ -86,8 +86,17 @@
                 <div class="modal-body background">
                     <form action="">
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <label for="text" class="form-label text-white">ФИО</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="text" class="form-label text-white">Номер телефона</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                          </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white">Адрес электронной почты</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
                           </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label text-white">Сообщение:</label>
@@ -119,15 +128,13 @@
       </div>
 
       <div class="modal fade" id="articles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
           <div class="modal-content">
             <div class="modal-header background">
               <h1 class="modal-title fs-5 text-white id="exampleModalLabel">Modal title</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body background text-white">
-              ...
-            </div>
+            <div class="modal-body background text-white">Bu modallarning aylantirish harakatini ko'rsatish uchun ba'zi bir to'ldiruvchi kontent. Tarkibning minimal ichki balandlikdan qanday oshib ketishini ko'rsatish uchun biz takroriy qator tanaffuslaridan foydalanamiz va shu bilan ichki aylantirishni ko'rsatamiz. Kontent modalning oldindan belgilangan maksimal balandligidan uzunroq bo'lsa, kontent kesiladi va modal ichida aylantiriladi. Ushbu kontent aylantirganingizdan so'ng pastki qismida paydo bo'lishi kerak. </div>
             <div class="modal-footer background">
               <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
             </div>
@@ -194,11 +201,11 @@
                 </div>
 
                 <div class="col-lg-1 d-none d-lg-block"></div>
-
+ 
                 <div class="col-lg-5 col-sm-10 col-12">
                     <div class="imgs">
                         <img src="asset/img/face.png" class="face mx-auto" alt="">
-                        <img src="asset/img/soya.svg" class="shadow-img" alt="">
+                        <img src="asset/img/soya.svg" class="shadow-img d-none d-xl-block" alt="">
                     </div>
                 </div>
             </div>

@@ -104,7 +104,7 @@ const swiper2 = new Swiper(".discover__swiper", {
                 slidesPerView: 2,
                 spaceBetween: 60,
               },
-            1024:{
+            1100:{
                 slidesPerView: 3,
                 spaceBetween: 60, 
             }
@@ -151,7 +151,7 @@ const swiper3 = new Swiper(".collection__swiper", {
             slidesPerView: 2,
             spaceBetween: 30,
           },
-        1024: {
+        1100: {
             slidesPerView: 3,
             spaceBetweenSlides: 30
         },
@@ -162,7 +162,7 @@ const swiper4 = new Swiper(".commonity-swiper", {
     slidesPerView: 4,
     centeredSlides: false,
     slidesPerGroup: 1,
-    spaceBetween: 20,
+    spaceBetween: 30,
     loop:  true,
     autoplay: {
       delay: 2500,
