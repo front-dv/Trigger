@@ -13,7 +13,7 @@ html {
 body,
 .background,
 .bground {
-    background: rgba(44,215,183,128);
+    background: rgba(31, 23, 33, 1);
 }
 
 input {
@@ -84,7 +84,6 @@ img {
     font: Montserrat;
     font-weight: 300;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 1);
 }
 
 .navbar-nav {
@@ -100,15 +99,10 @@ img {
     height: 100%;
 }
 
-.card-title {
-    color: rgba(255, 255, 255, 1);
-}
-
 .card-text {
     font: Montserrat;
     font-weight: 300;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 1);
 }
 
 .static {
@@ -359,7 +353,6 @@ img {
 
 .collection-title {
     font-size: 24px;
-    color: rgba(166, 88, 179, 1);
 }
 
 .commonity {
@@ -367,7 +360,7 @@ img {
 }
 
 .commonity .nav-link {
-    color: rgba(255, 255, 255, 1) !important;
+    color: rgba(44,215,184,255) !important;
     font-size: 20px;
     font-weight: 300;
     border-radius: 12px 12px 0px 0px;
@@ -451,13 +444,11 @@ img {
 .work-body-title {
     font-size: 40px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 1);
 }
 
 .work-body-text {
     font-size: 20px;
     font-weight: 300;
-    color: rgba(255, 255, 255, 1);
 }
 
 .work-button {
@@ -472,23 +463,20 @@ img {
 
 .work .card-body i {
     font-size: 2.3rem;
-    color: rgba(211, 43, 239, 1);
     background: rgba(217, 0, 255, 0.128);
     border-radius: 7px;
-    border: 1px solid rgba(211, 43, 239, 1);
+    border: 1px solid rgba(44,215,184,255);
 }
 
 .work-subtitle {
     font-size: 1rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
     letter-spacing: 1px;
 }
 
 .work-text {
     font-size: 15px;
     font-weight: 200;
-    color: rgba(255, 255, 255, 1);
 }
 
 .digital {
@@ -527,17 +515,14 @@ img {
     font-size: 16px;
     font-weight: 200;
     letter-spacing: 1px;
-    color: rgba(255, 255, 255, 1);
 }
 
 .digital-creator button {
     background: rgba(217, 217, 217, 1);
-    color: rgba(166, 88, 179, 1);
 }
 
 .digital-creator button:hover {
     background: rgb(232, 232, 232);
-    color: rgba(166, 88, 179, 1);
 }
 
 .footer {
@@ -546,13 +531,11 @@ img {
 
 .footer .footer-icons i {
     font-size: 1.5rem;
-    color: rgba(149, 80, 161, 1);
 }
 
 .footer h4 {
     font-size: 20px;
     font-weight: 400;
-    color: rgba(166, 88, 179, 1);
 }
 
 .footer li {
@@ -561,8 +544,10 @@ img {
     margin-bottom: 1rem;
 }
 
-.footer a {
-    color: white;
+
+
+.colors{  
+    color: rgba(44,215,184,255);
 }
 
 
