@@ -427,7 +427,7 @@ img {
 }
 
 .work .card {
-    background: linear-gradient(90deg, rgba(225, 45, 255, 1) 15%, transparent 60%);
+    background: linear-gradient(90deg, #2cd4cd 15%, transparent 60%);
     padding: 1px;
     border-radius: 27px;
     border: none;
