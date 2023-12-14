@@ -610,6 +610,10 @@ img {
     .card-body {
         width: 100%;
     }
+
+    .cards .card-body h1{
+        font-size: 4rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -693,6 +697,10 @@ img {
     .collection-card{
         width: 80%;
     }
+
+    .cards .card-body h1{
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 416px) {
@@ -708,6 +716,10 @@ img {
         margin-bottom: 4rem;
         box-sizing: border-box;
         padding: 0;
+    }
+
+    .cards .card-body h1{
+        font-size: 2rem;
     }
 }
 
@@ -726,5 +738,9 @@ img {
 
     .commonity .nav-link {
         font-size: 12px;
+    }
+
+    .cards .card-body h1{
+        font-size: 1.5rem;
     }
 }
