@@ -46,10 +46,10 @@ const swiper1 = new Swiper(".sample-slider", {
     slidesPerGroup: 1,
     spaceBetween: false,
     scrollbar: '.swiper-scrollbar',
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,   
-    //   },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,   
+      },
     pagination: {
         el: '.swiper-pagination',
     },
@@ -95,7 +95,6 @@ const swiper1 = new Swiper(".sample-slider", {
 })
 
 const swiper2 = new Swiper(".discover__swiper", {
-
     slidesPerGroup: 1,
     slidesPerView: 3,
     spaceBetween: 60,
@@ -187,10 +186,10 @@ const swiper4 = new Swiper(".commonity-swiper", {
     slidesPerGroup: 1,
     spaceBetween: 30,
     loop:  true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 
     breakpoints: {
         // when window width is >= 320px
