@@ -13,6 +13,29 @@ function myFunction() {
     }
 }
 
+const from = document.querySelector('form')
+from.addEventListener('submit',(e)=>{
+    e.preventDefault()
+
+    const captchaResponse = grecaptcha.getResponse();
+
+    if (captchaResponse.length > 0){
+        throw new Error("Captcha not complete")
+    }
+
+    const fd = new FormData(e.target)
+    const params = new URLSearchParams(fd)
+
+    fetch('http://httpbin.org/post', {
+        method:"POST",
+        body: params,
+    })
+    .then(res => res.json())
+    then(data => console.log(data))
+    .catch(err => console.error(err))
+
+})
+
 
 const swiper1 = new Swiper(".sample-slider", {
     grid: {
@@ -23,10 +46,10 @@ const swiper1 = new Swiper(".sample-slider", {
     slidesPerGroup: 1,
     spaceBetween: false,
     scrollbar: '.swiper-scrollbar',
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,   
-      },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,   
+    //   },
     pagination: {
         el: '.swiper-pagination',
     },
@@ -147,10 +170,10 @@ const swiper3 = new Swiper(".collection__swiper", {
             slidesPerView: 1,
             spaceBetween: 30
         },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
+        // 768: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 30,
+        //   },
         1100: {
             slidesPerView: 3,
             spaceBetweenSlides: 30
@@ -164,10 +187,10 @@ const swiper4 = new Swiper(".commonity-swiper", {
     slidesPerGroup: 1,
     spaceBetween: 30,
     loop:  true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
 
     breakpoints: {
         // when window width is >= 320px

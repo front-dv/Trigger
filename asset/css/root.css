@@ -1,6 +1,7 @@
 :root {
     --swiper-pagination-bullet-inactive-color:#ececec;
     --swiper-pagination-bottom:0;
+    --swiper-pagination-bullet-active: #000000;
 }
 
 :root{

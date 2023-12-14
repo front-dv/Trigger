@@ -52,15 +52,21 @@ img {
 
 ::-webkit-scrollbar-thumb {
     border-radius: .5rem;
-    background-color: rgba(166, 88, 179, 1);
+    background-color: rgba(44,215,184,255);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(156, 47, 170);
+    background-color: #2cd4cd;
+}
+
+.modal-message{
+    border: .5rem solid rgba(44,215,184,255);
+}
+.modal-colse{
+    background-color: rgba(44,215,184,255);
 }
 
 .nav-logo {
-    filter: invert(1);
     max-width: 7rem;
 }
 
@@ -90,6 +96,25 @@ img {
     text-align: center;
 }
 
+
+.nav-item a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2cd4cd;
+    bottom: -5px;
+    transition: .4s transform;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.nav-item a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 .logo-svg {
     top: 0;
     left: 0;
@@ -103,6 +128,10 @@ img {
     font: Montserrat;
     font-weight: 300;
     font-size: 1rem;
+}
+
+.cards .card-body h1{
+    font-size: 4.5rem;
 }
 
 .static {
@@ -164,7 +193,7 @@ img {
     bottom: 0;
     top: initial !important;
     z-index: 20;
-    background: rgba(204, 84, 220, 0.17);
+    /* background: rgba(204, 84, 220, 0.17); */
     border-radius: 7px;
 }
 
@@ -183,8 +212,8 @@ img {
     background: transparent;
     padding: 1px .5rem;
     border-radius: 7px;
-    border: 1px solid rgba(255, 255, 255, 0.17);
-    color: rgba(255, 255, 255, 0.17);
+    border: 1px solid rgba(44,215,184,255);
+    color: rgba(44,215,184,255);
 }
 
 
@@ -318,7 +347,7 @@ img {
 }
 
 .collection .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #A658B3;
+    background-color: rgba(44,215,184,255);
 }
 
 .collection-shadow {
@@ -411,13 +440,7 @@ img {
 .dream-icons a{
     font-size: 20px;
 }
-.dream-icons a:nth-child(1),
-.dream-icons a:nth-child(3){
-    color: rgb(0, 149, 255);
-}
-.dream-icons a:nth-child(2){
-    color: rgb(255, 106, 0);
-}
+
 
 
 
@@ -451,19 +474,12 @@ img {
     font-weight: 300;
 }
 
-.work-button {
-    background: rgba(166, 88, 179, 1);
-    padding: 10px 29px;
-    border-radius: 10px;
-}
-
 .work-button:hover {
-    background: rgba(166, 88, 179, 1);
+    background: #2cd4cd;
 }
 
 .work .card-body i {
     font-size: 2.3rem;
-    background: rgba(217, 0, 255, 0.128);
     border-radius: 7px;
     border: 1px solid rgba(44,215,184,255);
 }

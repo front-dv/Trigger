@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="asset/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="asset/boxicons-2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -25,19 +26,19 @@
                 <div class="modal-body background">
                     <ul class="navbar-nav   gap-3 ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="colors ctive" aria-current="page" href="#markets">Домашняя страница</a>
+                            <a class="colors position-relative ctive" aria-current="page" href="#markets">Домашняя страница</a>
                         </li>
                         <li class="nav-item">
-                            <a class="colors " href="#discover">Статьи</a>
+                            <a class="colors position-relative" href="#discover">Статьи</a>
                         </li>
                         <li class="nav-item">
-                            <a class="colors " href="#collection">О компаниях</a>
+                            <a class="colors position-relative" href="#collection">О компаниях</a>
                         </li>
                         <li class="nav-item">
-                            <a class="colors " href="#commonity">Наша работа</a>
+                            <a class="colors position-relative" href="#commonity">Наша работа</a>
                         </li>
                         <li class="nav-item">
-                            <a class="colors " href="#workers">О компании</a>
+                            <a class="colors position-relative " href="#workers">О компании</a>
                         </li>
                     </ul>
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -72,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn px-3 colors py-2 rounded-top-0 background">Explor</button>
+                <button type="button" class="btn colors  rounded-top-0 px-3 py-2" data-bs-toggle="modal" data-bs-target="#exampleModals" data-bs-whatever="@fat">Связаться с нами</button>
             </div>
         </div>
     </div>
@@ -81,9 +82,13 @@
 
     <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+            <div class="modal-content modal-message">
+                <div class="modal-header background rounded-0">
+                    <button type="button" class="btn-close modal-colse" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
                 <div class="modal-body background">
-                    <form action="">
+                    <form action="" >
                         <div class="mb-3">
                             <label for="text" class="form-label colors">ФИО</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
@@ -101,11 +106,11 @@
                             <label for="message-text" class="col-form-label colors">Сообщение:</label>
                             <textarea class="form-control" id="message-text"></textarea>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6Le3_DApAAAAACQ_8tdQv7dyQZZr-wMj6aTNZ4Vy"></div>
                     </form>
                 </div>
-                <div class="modal-footer background">
-                    <button type="button" class="btn colors" data-bs-dismiss="modal">Закрывать</button>
-                    <button type="button" class="btn colors">Отправить сообщение</button>
+                <div class="modal-footer rounded-0 background">
+                    <button type="submit" class="btn btn-light bg-transparent text-white">Отправить сообщение</button>
                 </div>
             </div>
         </div>
@@ -149,32 +154,29 @@
                     <img src="asset/img/soya.svg" class="nav-shadow position-absolute" alt="">
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary d-lg-none" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Menu
-                </button>
+                <button type="button" class="btn btn-light  d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Меню </button>
 
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav   gap-3 ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="colors active" aria-current="page" href="#markets">Домашняя
+                            <a class="colors position-relative active" aria-current="page" href="#markets">Домашняя
                                 страница</a>
                         </li>
                         <li class="nav-item">
-                            <a class="colors" href="#discover">Статьи</a>
+                            <a class="colors position-relative" href="#discover">Статьи</a>
                         </li>
                         <li class="nav-item">
-                            <a class="colors" href="#collection">О компаниях</a>
+                            <a class="colors position-relative" href="#collection">О компаниях</a>
                         </li>
                         <li class="nav-item">
-                            <a class="colors" href="#commonity">Наша работа</a>
+                            <a class="colors position-relative" href="#commonity">Наша работа</a>
                         </li>
                         <li class="nav-item">
-                            <a class="colors" href="#workers">О компании</a>
+                            <a class="colors position-relative" href="#workers">О компании</a>
                         </li>
                     </ul>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-light colors px-3 py-2" data-bs-toggle="modal" data-bs-target="#exampleModals" data-bs-whatever="@fat">Связаться с нами</button>
+                    <button type="button" class="btn btn-light  px-3 py-2" data-bs-toggle="modal" data-bs-target="#exampleModals" data-bs-whatever="@fat">Связаться с нами</button>
                 </div>
             </div>
         </nav>
@@ -186,14 +188,13 @@
                 <div class="col-lg-6 col-10 order-2 order-lg-0">
                     <div class="cards">
                         <div class="card-body">
-                            <h5 class="fs-1 text-center text-lg-start fw-bold  colors mb-4">Есть задача? <br
-                                    class="d-none d-lg-block"> У нас есть <br class="d-none d-lg-block"> <span
-                                    class="text-primary">Решение.</span></h5>
-                            <p class="card-text text-center text-lg-start colors mb-4">Trigger - IT компания с
+                            <h1 class=" text-center text-lg-start fw-semibold colors mb-4">Есть задача? <br
+                                    class="d-none d-lg-block"> У нас есть <br class="d-none d-lg-block"> Решение.</h1>
+                            <p class="card-text text-center text-lg-start text-white mb-4">Trigger - IT компания с
                                 широким спектром услуг. Мы <br class="d-none d-lg-block"> помогаем клиентам развивать
                                 свой бизнес</p>
                             <div class="button d-flex justify-content-center justify-content-lg-start gap-4">
-                                <button class=" btn btn-light px-3 py-2">Напишите нам</button>
+                                <button class=" btn btn-light  px-3 py-2">Напишите нам</button>
                             </div>
                         </div>
                     </div>
@@ -344,12 +345,12 @@
                                 <div class="card-body text-white d-flex justify-content-between ">
                                     <div class="card-left">
                                         <h4 class="card-title colors fs-2">Заголовок</h4>
-                                        <h4 class="colors mt-4">Позиция</h4>
+                                        <h4 class="text-white mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
                                         <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span class="colors">0</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="colors">данные</span></div>
-                                        <button type="button" class="bg-transparent rounded-pill mt-3 colors" data-bs-toggle="modal" data-bs-target="#articles">подробнее</button>      
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="text-white">данные</span></div>
+                                        <button type="button" class="bg-transparent mt-3 btn btn-light text-white" data-bs-toggle="modal" data-bs-target="#articles">подробнее</button>      
                                     </div>
                                 </div>
                             </div>
@@ -369,12 +370,12 @@
                                 <div class="card-body text-white d-flex justify-content-between ">
                                     <div class="card-left">
                                         <h4 class="card-title colors fs-2">Заголовок</h4>
-                                        <h4 class="colors mt-4">Позиция</h4>
+                                        <h4 class="text-white mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
                                         <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span class="colors">0</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="colors">данные</span></div>
-                                        <button type="button"  class="bg-transparent rounded-pill mt-3">подробнее</button>
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="text-white">данные</span></div>
+                                        <button type="button"  class="bg-transparent btn btn-light text-white mt-3">подробнее</button>
                                     </div>
                                 </div>
                             </div>
@@ -394,12 +395,12 @@
                                 <div class="card-body text-white d-flex justify-content-between ">
                                     <div class="card-left">
                                         <h4 class="card-title colors fs-2">Заголовок</h4>
-                                        <h4 class="colors mt-4">Позиция</h4>
+                                        <h4 class="text-white mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
                                         <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span class="colors">0</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="colors">данные</span></div>
-                                        <button type="button" class="bg-transparent rounded-pill mt-3">подробнее</button>
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="text-white">данные</span></div>
+                                        <button type="button" class="bg-transparent btn btn-light text-white mt-3">подробнее</button>
                                     </div>
                                 </div>
                             </div>
@@ -419,12 +420,12 @@
                                 <div class="card-body text-white d-flex justify-content-between ">
                                     <div class="card-left">
                                         <h4 class="card-title colors fs-2">Заголовок</h4>
-                                        <h4 class="colors mt-4">Позиция</h4>
+                                        <h4 class="text-white mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
                                         <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span class="colors">0</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="colors">данные</span></div>
-                                        <button type="button" class="bg-transparent rounded-pill mt-3">подробнее</button>
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="text-white">данные</span></div>
+                                        <button type="button" class="bg-transparent btn btn-light text-white mt-3">подробнее</button>
                                     </div>
                                 </div>
                             </div>
@@ -638,15 +639,15 @@
                                                     class="dream-card-body d-flex justify-content-between align-items-baseline">
                                                     <div class="dream-left">
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
-                                                        <p class="dream-text colors"> Профессия</p>
+                                                        <p class="dream-text text-white">Профессия</p>
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="#exampleModall">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white"  data-bs-toggle="modal" data-bs-target="#exampleModall">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -660,15 +661,15 @@
                                                     class="dream-card-body d-flex justify-content-between align-items-baseline">
                                                     <div class="dream-left">
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
-                                                        <p class="dream-text colors"> Профессия</p>
+                                                        <p class="dream-text text-white">Профессия</p>
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -687,11 +688,11 @@
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -705,15 +706,15 @@
                                                     class="dream-card-body d-flex justify-content-between align-items-baseline">
                                                     <div class="dream-left">
                                                         <h5 class="dream-title text-white text-start "> Имя</h5>
-                                                        <p class="dream-text colors"> Профессия</p>
+                                                        <p class="dream-text text-white">Профессия</p>
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -737,15 +738,15 @@
                                                     class="dream-card-body d-flex justify-content-between align-items-baseline">
                                                     <div class="dream-left">
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
-                                                        <p class="dream-text colors"> Профессия</p>
+                                                        <p class="dream-text text-white">Профессия</p>
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -759,15 +760,15 @@
                                                     class="dream-card-body d-flex justify-content-between align-items-baseline">
                                                     <div class="dream-left">
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
-                                                        <p class="dream-text colors"> Профессия</p>
+                                                        <p class="dream-text text-white">Профессия</p>
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -786,11 +787,11 @@
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -804,15 +805,15 @@
                                                     class="dream-card-body d-flex justify-content-between align-items-baseline">
                                                     <div class="dream-left">
                                                         <h5 class="dream-title text-white"> Имя</h5>
-                                                        <p class="dream-text colors"> Профессия</p>
+                                                        <p class="dream-text text-white">Профессия</p>
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -826,15 +827,15 @@
                                                     class="dream-card-body d-flex justify-content-between align-items-baseline">
                                                     <div class="dream-left">
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
-                                                        <p class="dream-text colors"> Профессия</p>
+                                                        <p class="dream-text text-white">Профессия</p>
                                                     </div>
                                                     <div class="dream-right text-end">
                                                         <div class="dream-icons mb-2">
-                                                            <a href=""><i class='bx bxl-telegram'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook' ></i></a>
+                                                            <a href=""><i class='bx bxl-telegram colors'></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
                                                         </div>
-                                                        <button type="button" class="btn btn-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
+                                                        <button type="button" class="btn btn-light bg-transparent text-white" data-bs-toggle="modal" data-bs-target="none">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -856,7 +857,7 @@
                     <div class="col-xl-4 col-12 text-lg-center text-start text-xl-start">
                         <div class="text-start">
                             <h5 class="work-body-title colors text-start mb-3">Услуги</h5>
-                            <p class="work-body-text colors">Начало работы и продажа Nfts. Изучите весь процесс, чтобы не
+                            <p class="work-body-text text-white">Начало работы и продажа Nfts. Изучите весь процесс, чтобы не
                                 запутаться.</p>
                         </div>
                     </div>
@@ -867,7 +868,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <i class='bx bx-desktop colors pt-1 pb-1 ps-2 pe-2 mb-2'></i>
-                                        <h6 class="work-subtitle colors mb-2 ">Web-сайты</h6>
+                                        <h6 class="work-subtitle text-white mb-2 ">Web-сайты</h6>
                                         <p class="work-text colors">Мы предоставляем такие решения, как полная разработка
                                             сайтов, разработка стратегии, комплексное продвижение в поисковых и
                                             социальных сетях.</p>
@@ -878,7 +879,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <i class='bx bx-mobile-alt colors pt-1 pb-1 ps-2 pe-2 mb-2'></i>
-                                        <h6 class="work-subtitle mb-2 colors ">Мобильные приложения</h6>
+                                        <h6 class="work-subtitle mb-2 text-white">Мобильные приложения</h6>
                                         <p class="work-text colors">Мы создадим программное обеспечение, необходимое для
                                             развития вашего бизнеса.</p>
                                     </div>
@@ -888,7 +889,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <i class='bx bx-bot colors pt-1 pb-1 ps-2 pe-2 mb-2'></i>
-                                        <h6 class="work-subtitle mb-2 colors ">Telegram-боты</h6>
+                                        <h6 class="work-subtitle mb-2 text-white">Telegram-боты</h6>
                                         <p class="work-text colors">Мы создаем многофункциональных, быстрых и надежных ботов
                                             Telegram..</p>
                                     </div>
@@ -898,7 +899,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <i class='bx bx-shield-plus colors pt-1 pb-1 ps-2 pe-2 mb-2'></i>
-                                        <h6 class="work-subtitle mb-2 colors ">Система управления страхованием</h6>
+                                        <h6 class="work-subtitle mb-2 text-white">Система управления страхованием</h6>
                                         <p class="work-text colors">Мы создаем программное обеспечение, необходимое для
                                             развития вашего страхового бизнеса.</p>
                                     </div>
@@ -907,7 +908,7 @@
                         </div>
                     </div>
                     <div class=" d-flex justify-content-center">
-                        <button class="work-button border-0"><a href="#" class="fs-6 text-white">Узнать подробнее</a>
+                        <button class="btn btn-light  px-3 py-2"><a href="#" class="fs-6 text-dark">Узнать подробнее</a>
                         </button>
                     </div>
 
@@ -953,7 +954,7 @@
 
                     <div class="col-md-6 col-xl-3 col-sm-6 col-12 mb-5 gx-5">
                         <img src="asset/img/trigger_logo.svg" class="nav-logo " alt="">
-                        <p class="colors fw-light lh-base mt-4">Крупнейшая в мире цифровая площадка для
+                        <p class="text-white fw-light lh-base mt-4">Крупнейшая в мире цифровая площадка для
                             коллекционирования криптовалют и не токенов (NFT). Покупайте, продавайте и открывайте для
                             себя эксклюзивные цифровые активы.</p>
                         <div class="footer-icons mt-4">
@@ -1000,7 +1001,7 @@
                             </div>
 
                             <div class="col-xl-3 l-lg-3 col-8">
-                                <h4 class="colors">Company</h4>
+                                <h4 class="text-white">Компания</h4>
                                 <ul class="p-0">
                                     <li><a href="#markets" class="colors">Домашняя страница</a></li>
                                     <li><a href="#discover" class="colors">Статьи</a></li>
