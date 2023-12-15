@@ -648,7 +648,7 @@ img {
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 570px) {
     .face {
         margin-bottom: 3rem;
         width: 60%;
@@ -701,6 +701,12 @@ img {
     .cards .card-body h1{
         font-size: 2.5rem;
     }
+
+    .market-shadow {
+        top: -4rem;
+        z-index: -1;
+        right: 20rem;
+    }
 }
 
 @media screen and (max-width: 416px) {
@@ -720,6 +726,12 @@ img {
 
     .cards .card-body h1{
         font-size: 2rem;
+    }
+
+    .market-shadow {
+        top: -6rem;
+        z-index: -1;
+        right: 9rem;
     }
 }
 
@@ -742,5 +754,10 @@ img {
 
     .cards .card-body h1{
         font-size: 1.5rem;
+    }
+    .market-shadow {
+        top: -4rem;
+        z-index: -1;
+        right: 6rem;
     }
 }
