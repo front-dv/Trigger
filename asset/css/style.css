@@ -617,6 +617,9 @@ img {
     .cards .card-body h1{
         font-size: 4rem;
     }
+    .sample-slider {
+        height: calc(calc(70px * 2) + 30px);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -709,6 +712,18 @@ img {
         top: -4rem;
         z-index: -1;
         right: 20rem;
+    }
+    .sample-slider {
+        height: calc(calc(70px * 2) + 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sample-slider {
+        width: 100%;
+        height: calc(calc(70px * 2) + 10px);
+        padding-bottom: 10px;
+        box-sizing: content-box;
     }
 }
 

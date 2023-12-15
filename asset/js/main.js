@@ -62,29 +62,32 @@ const swiper1 = new Swiper(".sample-slider", {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 0,
             grid: {
-                rows: 2,
+                rows: 1,
             },
         },
         // when window width is >= 480px
         480: {
             slidesPerView: 1,
-            spaceBetween: 30
+            spaceBetween: 10,
+            grid: {
+                rows: 1,
+            },
         },
         // when window width is >= 640px
         540: {
             slidesPerView: 2,
-            spaceBetween: 30
+            spaceBetween: 20
         },
         768: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 20,
           },
-        // when window width is <= 999px
-            999: {
+        // when window width is <= 991px
+            991: {
             slidesPerView: 3,
-            spaceBetweenSlides: 30
+            spaceBetweenSlides: 30,
         },
           1400:{
             slidesPerView: 4,

@@ -7,7 +7,7 @@
 :root{
     @media screen and (max-width: 550px) {
         .sample-slider{
-            --swiper-pagination-top: 350px;
+            /* --swiper-pagination-top: 350px; */
         }
 
     }
