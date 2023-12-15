@@ -69,8 +69,7 @@ const swiper1 = new Swiper(".sample-slider", {
         },
         // when window width is >= 480px
         480: {
-            slidesPerView: 1
-            ,
+            slidesPerView: 1,
             spaceBetween: 30
         },
         // when window width is >= 640px
@@ -169,11 +168,11 @@ const swiper3 = new Swiper(".collection__swiper", {
             slidesPerView: 1,
             spaceBetween: 30
         },
-        // 768: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 30,
-        //   },
-        1100: {
+        991: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        1200: {
             slidesPerView: 3,
             spaceBetweenSlides: 30
         },
@@ -195,6 +194,7 @@ const swiper4 = new Swiper(".commonity-swiper", {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
+            centeredSlides: true,
             spaceBetween: 30,
         },
         grid: {
@@ -203,6 +203,7 @@ const swiper4 = new Swiper(".commonity-swiper", {
         // when window width is >= 480px
         480: {
             slidesPerView: 1,
+            centeredSlides: true,
             spaceBetween: 30
         },
         // when window width is >= 640px

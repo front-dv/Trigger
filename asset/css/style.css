@@ -62,8 +62,16 @@ img {
 .modal-message{
     border: .5rem solid rgba(44,215,184,255);
 }
+
+.modal-message .modal-body form input:focus{
+    box-shadow: initial;
+}
 .modal-colse{
     background-color: rgba(44,215,184,255);
+}
+
+.navbar{
+    height: 5rem;
 }
 
 .nav-logo {
@@ -542,10 +550,6 @@ img {
     background: rgb(232, 232, 232);
 }
 
-.footer {
-    margin-bottom: 4rem;
-}
-
 .footer .footer-icons i {
     font-size: 1.5rem;
 }
@@ -560,8 +564,6 @@ img {
     font-weight: 400;
     margin-bottom: 1rem;
 }
-
-
 
 .colors{  
     color: rgba(44,215,184,255);
