@@ -63,8 +63,10 @@ img {
     border: .5rem solid rgba(44,215,184,255);
 }
 
-.modal-message .modal-body form input:focus{
+.modal-message .modal-body form input:focus,
+.modal-message .modal-body form textarea:focus{
     box-shadow: initial;
+    border-color: initial;
 }
 .modal-colse{
     background-color: rgba(44,215,184,255);
@@ -418,7 +420,6 @@ img {
 }
 
 .dream-card {
-    border: .6rem solid rgba(46, 8, 51, 1);
     border-radius: 27px;
     background: rgba(46, 8, 51, 1);
 }
