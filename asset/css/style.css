@@ -71,9 +71,12 @@ img {
 .modal-colse{
     background-color: rgba(44,215,184,255);
 }
-
+/* navbar-nav menu */
 .navbar{
     height: 5rem;
+}
+.navbar-nav {
+    text-align: center;
 }
 
 .nav-logo {
@@ -96,17 +99,6 @@ img {
     z-index: -1;
 }
 
-.nav-link {
-    font: Montserrat;
-    font-weight: 300;
-    font-size: 1rem;
-}
-
-.navbar-nav {
-    text-align: center;
-}
-
-
 .nav-item a::before{
     position: absolute;
     content: '';
@@ -125,29 +117,14 @@ img {
     transform-origin: left;
 }
 
-
-.logo-svg {
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-}
-
+/* Есть задача? */
 .card-text {
-    font: Montserrat;
     font-weight: 300;
     font-size: 1rem;
 }
 
 .cards .card-body h1{
     font-size: 4.5rem;
-}
-
-.static {
-    position: absolute;
-    bottom: 0;
 }
 
 .face {
@@ -161,6 +138,7 @@ img {
     z-index: -1;
 }
 
+/* Markets */
 .market {
     margin-top: 13rem;
     margin-bottom: 10rem;
@@ -170,11 +148,6 @@ img {
     top: -5rem;
     z-index: -1;
 }
-
-.select {
-    border: 2px solid rgba(255, 255, 255, 0.5);
-}
-
 
 .swiper-img {
     width: 250px;
@@ -194,17 +167,12 @@ img {
     box-sizing: content-box;
 }
 
-.commonity .nav-tabs .nav-link {
-    border: initial;
-}
-
 .sample-slider .slidePrev-btn,
 .sample-slider .slideNext-btn {
     position: absolute;
     bottom: 0;
     top: initial !important;
     z-index: 20;
-    /* background: rgba(204, 84, 220, 0.17); */
     border-radius: 7px;
 }
 
@@ -227,7 +195,7 @@ img {
     color: rgba(44,215,184,255);
 }
 
-
+/* Discover */
 .rounded {
     padding: .2rem .5rem;
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -337,6 +305,7 @@ img {
     border-left: none;
 }
 
+/* Collection */
 .collection-top {
     margin-bottom: 4rem;
 }
@@ -395,8 +364,13 @@ img {
     font-size: 24px;
 }
 
+/* Commonity */
 .commonity {
     margin: 5rem 0;
+}
+
+.select {
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .commonity .nav-link {
@@ -410,6 +384,10 @@ img {
 .commonity .nav-link {
     margin-bottom: 0;
 }
+.nav-link {
+    font-weight: 300;
+    font-size: 1rem;
+}
 
 .commonity .nav-link:hover,
 .commonity .nav-link.active {
@@ -417,6 +395,10 @@ img {
     border-top: rgba(54, 45, 55, 0.72);
     border-left: rgba(54, 45, 55, 0.72);
     border-right: rgba(54, 45, 55, 0.72);
+}
+
+.commonity .nav-tabs .nav-link {
+    border: initial;
 }
 
 .dream-card {
@@ -441,20 +423,11 @@ img {
     font-weight: 200;
 }
 
-.card-time {
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
 .dream-icons a{
     font-size: 20px;
 }
 
-
-
-
-
+/* Workers */
 .work {
     margin-bottom: 4rem;
 }
@@ -505,19 +478,18 @@ img {
     font-weight: 200;
 }
 
+
+/* Degital */
 .digital {
     background: rgba(166, 88, 179, 1);
     border-radius: 27px;
     margin: 5rem 0;
 }
 
-.end-10-px {
-    right: 10px;
-}
-
 .absolute-centered {
     top: 50%;
     transform: translateY(-50%);
+    right: 10px;
 }
 
 .digital-creator h1 {
