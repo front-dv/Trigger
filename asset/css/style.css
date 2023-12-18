@@ -590,7 +590,7 @@ img {
         font-size: 4rem;
     }
     .sample-slider {
-        height: calc(calc(70px * 2) + 30px);
+        height: calc(calc(100px * 2) + 30px);
     }
 }
 

@@ -46,10 +46,10 @@ const swiper1 = new Swiper(".sample-slider", {
     slidesPerGroup: 1,
     spaceBetween: false,
     scrollbar: '.swiper-scrollbar',
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,   
-      },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,   
+    //   },
     pagination: {
         el: '.swiper-pagination',
     },
@@ -209,24 +209,23 @@ const swiper4 = new Swiper(".commonity-swiper", {
             centeredSlides: true,
             spaceBetween: 30
         },
-        // when window width is >= 640px
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
         768: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 10,
           },
         // when window width is <= 999px
             999: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 40
+        },
+        1200:{
             slidesPerView: 3,
             spaceBetweenSlides: 30
         },
-        1200: {
+        1400:{
             slidesPerView: 4,
             spaceBetweenSlides: 30
-        },
+        }
     }
   });
 
