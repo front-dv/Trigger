@@ -46,10 +46,10 @@ const swiper1 = new Swiper(".sample-slider", {
     slidesPerGroup: 1,
     spaceBetween: false,
     scrollbar: '.swiper-scrollbar',
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,   
-    //   },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,   
+      },
     pagination: {
         el: '.swiper-pagination',
     },
@@ -161,11 +161,6 @@ const swiper3 = new Swiper(".collection__swiper", {
         grid: {
             rows: 2,
         },
-        // when window width is >= 480px
-        // 480: {
-        //     slidesPerView: 1,
-        //     spaceBetween: 30
-        // },
         // when window width is >= 640px
         640: {
             slidesPerView: 1,
