@@ -96,7 +96,7 @@ const swiper1 = new Swiper(".sample-slider", {
     }
 })
 
-const swiper2 = new Swiper(".discover__swiper", {
+const swiper2 = new Swiper(".discover-swiper", {
     slidesPerGroup: 1,
     slidesPerView: 3,
     spaceBetween: 60,
@@ -135,7 +135,7 @@ const swiper2 = new Swiper(".discover__swiper", {
         }
 });
 
-const swiper3 = new Swiper(".collection__swiper", {
+const swiper3 = new Swiper(".collection-swiper", {
     slidesPerView: 4,
     grid: {
         rows: 2,
