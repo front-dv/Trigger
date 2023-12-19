@@ -133,38 +133,46 @@ img {
 
 .shadow-img {
     position: absolute;
-    top: -15%;
+    top: -25%;
     left: 40%;
     z-index: -1;
 }
 
-/* Markets */
-.market {
-    margin-top: 13rem;
-    margin-bottom: 10rem;
+/* brands */
+
+.brands{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
-.market-shadow {
-    top: -5rem;
-    z-index: -1;
+#brands .swiper {
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+
+}
+#brands .swiper-wrapper>* {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-top: calc(var(--bs-gutter-x) * .5);
+    padding-bottom: calc(var(--bs-gutter-x) * .5);
+}
+.brands-shadow {
+    top: -8rem;
+    left: -1rem;
+    z-index: 1;
+    height: 20rem;
+    width: 20rem;
 }
 
-.swiper-img {
-    width: 250px;
-    height: 100px;
-}
-
-.swiper-img img {
-    width: 170px !important;
-    height: 50px !important;
+.brands-img{
+    max-width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
 .sample-slider {
-    width: 100%;
     height: calc(calc(151px * 2) + 30px);
-    padding-bottom: 50px;
-    box-sizing: content-box;
+    padding-bottom: 80px;
 }
 
 .sample-slider .slidePrev-btn,
@@ -258,7 +266,7 @@ img {
     object-fit: cover;
 }
 
-.discover__swiper {
+.discover-swiper {
     width: calc(100% - 120px);
     box-sizing: content-box;
     padding: 0 60px;
@@ -269,8 +277,8 @@ img {
     max-width: calc(1440px + 120px);
 }
 
-.discover__swiper .slidePrev-btn,
-.discover__swiper .slideNext-btn {
+.discover-swiper .slidePrev-btn,
+.discover-swiper .slideNext-btn {
     position: absolute;
     bottom: 50%;
     top: initial !important;
@@ -279,16 +287,16 @@ img {
     border-radius: 27px;
 }
 
-.discover__swiper .slidePrev-btn {
+.discover-swiper .slidePrev-btn {
     left: 0;
 }
 
-.discover__swiper .slideNext-btn {
+.discover-swiper .slideNext-btn {
     right: 0;
 }
 
-.discover__swiper .slidePrev-btn i,
-.discover__swiper .slideNext-btn i {
+.discover-swiper .slidePrev-btn i,
+.discover-swiper .slideNext-btn i {
     font-size: 25px;
     background: initial;
     padding: .5rem;
@@ -297,11 +305,11 @@ img {
     color: rgba(219, 88, 236, 0.5);
 }
 
-.discover__swiper .slidePrev-btn i {
+.discover-swiper .slidePrev-btn i {
     border-right: none;
 }
 
-.discover__swiper .slideNext-btn i {
+.discover-swiper .slideNext-btn i {
     border-left: none;
 }
 
@@ -310,7 +318,7 @@ img {
     margin-bottom: 4rem;
 }
   
-.collection__swiper {
+.collection-swiper {
     width: 100%;
     height: calc(calc(320px * 2) + 30px);
     padding-bottom: 50px;
@@ -541,8 +549,24 @@ img {
 .colors{  
     color: rgba(44,215,184,255);
 }
-
-
+.ourPartners .swiper-wrapper {
+    height: 202px;
+}
+.our-partner-box {
+    width: 170px;
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(1) opacity(0.5);
+    transition: 250ms;
+}
+.our-partner-box:hover {
+    filter: grayscale(0) opacity(1);
+    transform: scale(1.02);
+}
 @media screen and (max-width: 1024px) {
     .shadow-img {
         top: 15%;
@@ -644,8 +668,8 @@ img {
         font-size: 35px;
     }
 
-    .discover__swiper .slidePrev-btn i,
-    .discover__swiper .slideNext-btn i {
+    .discover-swiper .slidePrev-btn i,
+    .discover-swiper .slideNext-btn i {
         font-size: 20px;
         padding: .2rem;
     }
@@ -680,7 +704,7 @@ img {
         font-size: 2.5rem;
     }
 
-    .market-shadow {
+    .brands-shadow {
         top: -4rem;
         z-index: -1;
         right: 20rem;
@@ -707,7 +731,7 @@ img {
     .collection-card{
         width: 100%;
     }
-    .discover__swiper {
+    .discover-swiper {
         width: 100%;
         margin-bottom: 4rem;
         box-sizing: border-box;
@@ -718,7 +742,7 @@ img {
         font-size: 2rem;
     }
 
-    .market-shadow {
+    .brands-shadow {
         top: -6rem;
         z-index: -1;
         right: 9rem;
@@ -745,7 +769,7 @@ img {
     .cards .card-body h1{
         font-size: 1.5rem;
     }
-    .market-shadow {
+    .brands-shadow {
         top: -4rem;
         z-index: -1;
         right: 6rem;
