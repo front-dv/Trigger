@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
 <body>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Menu Mobel-->
+    <div class="modal fade" id="ModalMenu" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header background">
@@ -42,40 +43,42 @@
                         <div></div>
                     </ul>
                 </div>
-                <button type="button" class="btn colors  rounded-top-0 px-3 py-2" data-bs-toggle="modal" data-bs-target="#exampleModals" data-bs-whatever="@fat">Связаться с нами</button>
+                <button type="button" class="btn colors  rounded-top-0 px-3 py-2" data-bs-toggle="modal"
+                    data-bs-target="#SendmessageModal" data-bs-whatever="@fat">Связаться с нами</button>
             </div>
         </div>
     </div>
     </div>
 
-
-    <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Send a message -->
+    <div class="modal fade" id="SendmessageModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content modal-message">
                 <div class="modal-header background rounded-0">
                     <button type="button" class="btn-close modal-colse" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body background">
-                    <form action="" > 
+                    <form action="">
                         <div class="mb-3">
                             <label for="text" class="form-label colors">ФИО</label>
                             <input type="text" class="form-control" id="text">
-                          </div>
+                        </div>
 
-                          <div class="mb-3">
+                        <div class="mb-3">
                             <label for="text-number" class="form-label colors">Номер телефона</label>
                             <input type="text" class="form-control" id="text-number">
-                          </div>
+                        </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label colors">Адрес электронной почты</label>
+                            <label for="exampleFormControlInput1" class="form-label colors">Адрес электронной
+                                почты</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1">
-                          </div>
+                        </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label colors">Сообщение:</label>
                             <textarea class="form-control" id="message-text"></textarea>
                         </div>
-                            <div class="g-recaptcha " data-sitekey="6Le3_DApAAAAACQ_8tdQv7dyQZZr-wMj6aTNZ4Vy"></div>
+                        <div class="g-recaptcha " data-sitekey="6Le3_DApAAAAACQ_8tdQv7dyQZZr-wMj6aTNZ4Vy"></div>
                     </form>
                 </div>
                 <div class="modal-footer rounded-0 background">
@@ -85,35 +88,42 @@
         </div>
     </div>
 
-    <div class="modal fade" id="exampleModall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header background">
-              <h1 class="modal-title fs-5 colors" id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body background colors">
-              ...
-            </div>
-            <div class="modal-footer background"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="articles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--Статьи modal  -->
+    <div class="modal fade" id="articles" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
-          <div class="modal-content">
-            <div class="modal-header background">
-              <h1 class="modal-title fs-5 colors id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header background">
+                    <h1 class="modal-title fs-5 colors id=" exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body background colors">Bu modallarning aylantirish harakatini ko'rsatish uchun ba'zi
+                    bir to'ldiruvchi kontent. Tarkibning minimal ichki balandlikdan qanday oshib ketishini ko'rsatish
+                    uchun biz takroriy qator tanaffuslaridan foydalanamiz va shu bilan ichki aylantirishni ko'rsatamiz.
+                    Kontent modalning oldindan belgilangan maksimal balandligidan uzunroq bo'lsa, kontent kesiladi va
+                    modal ichida aylantiriladi. Ushbu kontent aylantirganingizdan so'ng pastki qismida paydo bo'lishi
+                    kerak. </div>
+                <div class="modal-footer background">
+                    <button type="button" class="btn btn-secondary colors" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-body background colors">Bu modallarning aylantirish harakatini ko'rsatish uchun ba'zi bir to'ldiruvchi kontent. Tarkibning minimal ichki balandlikdan qanday oshib ketishini ko'rsatish uchun biz takroriy qator tanaffuslaridan foydalanamiz va shu bilan ichki aylantirishni ko'rsatamiz. Kontent modalning oldindan belgilangan maksimal balandligidan uzunroq bo'lsa, kontent kesiladi va modal ichida aylantiriladi. Ushbu kontent aylantirganingizdan so'ng pastki qismida paydo bo'lishi kerak. </div>
-            <div class="modal-footer background">
-              <button type="button" class="btn btn-secondary colors" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+    <!--Наши сотрудники Modal  -->
+    <div class="modal fade" id="ouremployeesModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header background">
+                    <h1 class="modal-title fs-5 colors">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body background colors">
+                    salom
+                </div>
+                <div class="modal-footer background"></div>
+            </div>
+        </div>
+    </div>
 
     <header>
         <nav class="navbar navbar-expand-lg" id="myHeader">
@@ -123,7 +133,8 @@
                     <img src="asset/img/soya.svg" class="nav-shadow position-absolute" alt="">
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-light  d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Меню </button>
+                <button type="button" class="btn btn-light  d-lg-none" data-bs-toggle="modal"
+                    data-bs-target="#ModalMenu">Меню </button>
 
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav   gap-3 ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll">
@@ -144,7 +155,8 @@
                         </li>
                     </ul>
                     <!-- Button trigger modal -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModals" data-bs-whatever="@fat">Связаться с нами</button>
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#SendmessageModal"
+                        data-bs-whatever="@fat">Связаться с нами</button>
                 </div>
             </div>
         </nav>
@@ -172,9 +184,10 @@
 
                 <div class="col-lg-5 col-sm-10 col-12">
                     <div class="imgs">
-                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" class="face mx-auto"></script><lottie-player
-                        src="https://lottie.host/0aaf02a3-e1e4-4d24-b528-6bb684b4bd97/c7WgYck4mw.json" speed="2"
-                         loop  autoplay direction="1" mode="normal"></lottie-player>
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+                            class="face mx-auto"></script><lottie-player
+                            src="https://lottie.host/0aaf02a3-e1e4-4d24-b528-6bb684b4bd97/c7WgYck4mw.json" speed="2"
+                            loop autoplay direction="1" mode="normal"></lottie-player>
                         <img src="asset/img/soya.svg" class="shadow-img d-none d-xl-block" alt="">
                     </div>
                 </div>
@@ -194,7 +207,7 @@
                 </div>
 
                 <div class="row swiper sample-slider">
-                    <div class="swiper-wrapper g-3"> 
+                    <div class="swiper-wrapper g-3">
                         <div class="swiper-slide">
                             <div class="px-3 py-4 bg-white rounded-4 w-100 border-1 our-partner-box shadow-hover">
                                 <img src="asset/img/kapital.png" alt="" class="brands-img">
@@ -255,7 +268,7 @@
                                 <img src="asset/img/brouser.png" alt="" class="brands-img">
                             </div>
                         </div>
-                        
+
                         <div class="swiper-slide">
                             <div class="px-3 py-4 bg-white rounded-4 w-100 border-1 our-partner-box shadow-hover">
                                 <img src="asset/img/autotrans.png" alt="" class="brands-img">
@@ -292,7 +305,8 @@
                     <h1 class="fs-1 colors mb-5">Статьи</h1>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
+                            <div
+                                class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
                                 <div class="card-top position-relative mb-4">
                                     <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
                                     <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
@@ -308,16 +322,21 @@
                                         <h4 class="text-white mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
-                                        <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span class="colors">1</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="text-white">01.09.2007</span></div>
-                                        <button type="button" class="bg-transparent mt-3 btn btn-light text-white px-2" data-bs-toggle="modal" data-bs-target="#articles">подробнее</button>      
+                                        <div class="d-flex align-items-center justify-content-end"><i
+                                                class='bx bx-show me-1'></i> <span class="colors">1</span></div>
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i
+                                                class='bx bx-calendar me-1'></i> <span
+                                                class="text-white">01.09.2007</span></div>
+                                        <button type="button" class="bg-transparent mt-3 btn btn-light text-white px-2"
+                                            data-bs-toggle="modal" data-bs-target="#articles">подробнее</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
+                            <div
+                                class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
                                 <div class="card-top position-relative mb-4">
                                     <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
                                     <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
@@ -333,16 +352,21 @@
                                         <h4 class="text-white mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
-                                        <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span class="colors">0</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="text-white">дата</span></div>
-                                        <button type="button"  class="bg-transparent btn btn-light text-white px-2 mt-3">подробнее</button>
+                                        <div class="d-flex align-items-center justify-content-end"><i
+                                                class='bx bx-show me-1'></i> <span class="colors">0</span></div>
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i
+                                                class='bx bx-calendar me-1'></i> <span class="text-white">дата</span>
+                                        </div>
+                                        <button type="button"
+                                            class="bg-transparent btn btn-light text-white px-2 mt-3">подробнее</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
+                            <div
+                                class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
                                 <div class="card-top position-relative mb-4">
                                     <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
                                     <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
@@ -358,16 +382,21 @@
                                         <h4 class="text-white mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
-                                        <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span class="colors">0</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="text-white">дата</span></div>
-                                        <button type="button" class="bg-transparent btn btn-light px-2 text-white mt-3">подробнее</button>
+                                        <div class="d-flex align-items-center justify-content-end"><i
+                                                class='bx bx-show me-1'></i> <span class="colors">0</span></div>
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i
+                                                class='bx bx-calendar me-1'></i> <span class="text-white">дата</span>
+                                        </div>
+                                        <button type="button"
+                                            class="bg-transparent btn btn-light px-2 text-white mt-3">подробнее</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
+                            <div
+                                class="card rounded-3 post overflow-hidden d-flex justify-content-between align-items-stretch">
                                 <div class="card-top position-relative mb-4">
                                     <img src="asset/img/alesia.jpg" class="card-img-top rounded-3" alt="...">
                                     <img src="asset/img/jimmy.jpg" class="position-absolute rounded-circle jimmy"
@@ -383,9 +412,13 @@
                                         <h4 class="text-white mt-4">Позиция</h4>
                                     </div>
                                     <div class="right text-end">
-                                        <div class="d-flex align-items-center justify-content-end"><i class='bx bx-show me-1'></i> <span class="colors">0</span></div>
-                                        <div class="d-flex align-items-center justify-content-end mt-4"><i class='bx bx-calendar me-1' ></i> <span class="text-white">дата</span></div>
-                                        <button type="button" class="bg-transparent btn btn-light px-2 text-white mt-3">подробнее</button>
+                                        <div class="d-flex align-items-center justify-content-end"><i
+                                                class='bx bx-show me-1'></i> <span class="colors">0</span></div>
+                                        <div class="d-flex align-items-center justify-content-end mt-4"><i
+                                                class='bx bx-calendar me-1'></i> <span class="text-white">дата</span>
+                                        </div>
+                                        <button type="button"
+                                            class="bg-transparent btn btn-light px-2 text-white mt-3">подробнее</button>
                                     </div>
                                 </div>
                             </div>
@@ -517,7 +550,7 @@
                             </div>
                         </div>
 
- 
+
                         <div class="swiper-slide d-flex justify-content-center justify-content-lg-start">
                             <div class="collection-card">
                                 <img src="asset/img/brothers.jpg" class="collection-img" alt="...">
@@ -586,7 +619,8 @@
                         </button>
                 </nav>
                 <div class="tab-content text-center" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
                         <div class="row">
                             <div class="swiper commonity-swiper">
                                 <div class="swiper-wrapper">
@@ -599,13 +633,17 @@
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
                                                         <div class="dream-icons mb-2">
                                                             <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors'></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                         </div>
                                                     </div>
-                                                    <div class="dream-right d-flex justify-content-between align-items-center">
+                                                    <div
+                                                        class="dream-right d-flex justify-content-between align-items-center">
                                                         <p class="dream-text text-white">Профессия</p>
-                                                        <button type="button" class="btn btn-light bg-transparent text-white"  data-bs-toggle="modal" data-bs-target="#exampleModall">Для справки</button>
+                                                        <button type="button"
+                                                            class="btn btn-light bg-transparent text-white"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#ouremployeesModal">Для справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -621,13 +659,16 @@
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
                                                         <div class="dream-icons mb-2">
                                                             <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors'></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                         </div>
                                                     </div>
-                                                    <div class="dream-right d-flex justify-content-between align-items-center">
+                                                    <div
+                                                        class="dream-right d-flex justify-content-between align-items-center">
                                                         <p class="dream-text text-white">Профессия</p>
-                                                        <button type="button" class="btn btn-light bg-transparent text-white">Для справки</button>
+                                                        <button type="button"
+                                                            class="btn btn-light bg-transparent text-white">Для
+                                                            справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -643,13 +684,16 @@
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
                                                         <div class="dream-icons mb-2">
                                                             <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors'></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                         </div>
                                                     </div>
-                                                    <div class="dream-right d-flex justify-content-between align-items-center">
+                                                    <div
+                                                        class="dream-right d-flex justify-content-between align-items-center">
                                                         <p class="dream-text text-white">Профессия</p>
-                                                        <button type="button" class="btn btn-light bg-transparent text-white">Для справки</button>
+                                                        <button type="button"
+                                                            class="btn btn-light bg-transparent text-white">Для
+                                                            справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -665,13 +709,16 @@
                                                         <h5 class="dream-title colors text-start ">Имя</h5>
                                                         <div class="dream-icons mb-2">
                                                             <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                            <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                            <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                            <a href=""><i class='bx bxl-instagram-alt colors'></i></a>
+                                                            <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                         </div>
                                                     </div>
-                                                    <div class="dream-right d-flex justify-content-between align-items-center">
+                                                    <div
+                                                        class="dream-right d-flex justify-content-between align-items-center">
                                                         <p class="dream-text text-white">Профессия</p>
-                                                        <button type="button" class="btn btn-light bg-transparent text-white">Для справки</button>
+                                                        <button type="button"
+                                                            class="btn btn-light bg-transparent text-white">Для
+                                                            справки</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -682,7 +729,8 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
                         <div class="row">
                             <div class="swiper commonity-swiper">
                                 <div class="swiper-wrapper">
@@ -696,13 +744,17 @@
                                                             <h5 class="dream-title colors text-start ">Имя</h5>
                                                             <div class="dream-icons mb-2">
                                                                 <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                                <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                                <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                                <a href=""><i
+                                                                        class='bx bxl-instagram-alt colors'></i></a>
+                                                                <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                             </div>
                                                         </div>
-                                                        <div class="dream-right d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="dream-right d-flex justify-content-between align-items-center">
                                                             <p class="dream-text text-white">Профессия</p>
-                                                            <button type="button" class="btn btn-light bg-transparent text-white">Для справки</button>
+                                                            <button type="button"
+                                                                class="btn btn-light bg-transparent text-white">Для
+                                                                справки</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -720,13 +772,17 @@
                                                             <h5 class="dream-title colors text-start ">Имя</h5>
                                                             <div class="dream-icons mb-2">
                                                                 <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                                <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                                <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                                <a href=""><i
+                                                                        class='bx bxl-instagram-alt colors'></i></a>
+                                                                <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                             </div>
                                                         </div>
-                                                        <div class="dream-right d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="dream-right d-flex justify-content-between align-items-center">
                                                             <p class="dream-text text-white">Профессия</p>
-                                                            <button type="button" class="btn btn-light bg-transparent text-white">Для справки</button>
+                                                            <button type="button"
+                                                                class="btn btn-light bg-transparent text-white">Для
+                                                                справки</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -744,13 +800,17 @@
                                                             <h5 class="dream-title colors text-start ">Имя</h5>
                                                             <div class="dream-icons mb-2">
                                                                 <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                                <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                                <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                                <a href=""><i
+                                                                        class='bx bxl-instagram-alt colors'></i></a>
+                                                                <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                             </div>
                                                         </div>
-                                                        <div class="dream-right d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="dream-right d-flex justify-content-between align-items-center">
                                                             <p class="dream-text text-white">Профессия</p>
-                                                            <button type="button" class="btn btn-light bg-transparent text-white">Для справки</button>
+                                                            <button type="button"
+                                                                class="btn btn-light bg-transparent text-white">Для
+                                                                справки</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -768,13 +828,17 @@
                                                             <h5 class="dream-title colors text-start ">Имя</h5>
                                                             <div class="dream-icons mb-2">
                                                                 <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                                <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                                <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                                <a href=""><i
+                                                                        class='bx bxl-instagram-alt colors'></i></a>
+                                                                <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                             </div>
                                                         </div>
-                                                        <div class="dream-right d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="dream-right d-flex justify-content-between align-items-center">
                                                             <p class="dream-text text-white">Профессия</p>
-                                                            <button type="button" class="btn btn-light bg-transparent text-white">Для справки</button>
+                                                            <button type="button"
+                                                                class="btn btn-light bg-transparent text-white">Для
+                                                                справки</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -792,13 +856,17 @@
                                                             <h5 class="dream-title colors text-start ">Имя</h5>
                                                             <div class="dream-icons mb-2">
                                                                 <a href=""><i class='bx bxl-telegram colors'></i></a>
-                                                                <a href=""><i class='bx bxl-instagram-alt colors' ></i></a>
-                                                                <a href=""><i class='bx bxl-facebook colors' ></i></a>
+                                                                <a href=""><i
+                                                                        class='bx bxl-instagram-alt colors'></i></a>
+                                                                <a href=""><i class='bx bxl-facebook colors'></i></a>
                                                             </div>
                                                         </div>
-                                                        <div class="dream-right d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="dream-right d-flex justify-content-between align-items-center">
                                                             <p class="dream-text text-white">Профессия</p>
-                                                            <button type="button" class="btn btn-light bg-transparent text-white">Для справки</button>
+                                                            <button type="button"
+                                                                class="btn btn-light bg-transparent text-white">Для
+                                                                справки</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -821,7 +889,8 @@
                     <div class="col-xl-4 col-12 text-lg-center text-start text-xl-start">
                         <div class="text-start">
                             <h5 class="work-body-title colors text-start mb-3">Услуги</h5>
-                            <p class="work-body-text text-white">Начало работы и продажа Nfts. Изучите весь процесс, чтобы не
+                            <p class="work-body-text text-white">Начало работы и продажа Nfts. Изучите весь процесс,
+                                чтобы не
                                 запутаться.</p>
                         </div>
                     </div>
@@ -833,7 +902,8 @@
                                     <div class="card-body">
                                         <i class='bx bx-desktop colors pt-1 pb-1 ps-2 pe-2 mb-2'></i>
                                         <h6 class="work-subtitle text-white mb-2 ">Web-сайты</h6>
-                                        <p class="work-text colors">Мы предоставляем такие решения, как полная разработка
+                                        <p class="work-text colors">Мы предоставляем такие решения, как полная
+                                            разработка
                                             сайтов, разработка стратегии, комплексное продвижение в поисковых и
                                             социальных сетях.</p>
                                     </div>
@@ -854,7 +924,8 @@
                                     <div class="card-body">
                                         <i class='bx bx-bot colors pt-1 pb-1 ps-2 pe-2 mb-2'></i>
                                         <h6 class="work-subtitle mb-2 text-white">Telegram-боты</h6>
-                                        <p class="work-text colors">Мы создаем многофункциональных, быстрых и надежных ботов
+                                        <p class="work-text colors">Мы создаем многофункциональных, быстрых и надежных
+                                            ботов
                                             Telegram..</p>
                                     </div>
                                 </div>
@@ -924,8 +995,10 @@
                             <a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter colors'></i></a>
                             <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube colors'></i></a>
                             <a href="https://gitlab.com/" target="_blank"><i class='bx bxl-gitlab colors'> </i></a>
-                            <a href="https://www.facebook.com/" target="_blank"> <i class='bx bxl-facebook colors'></i></a>
-                            <a href="https://web.telegram.org/a/" target="_blank"><i class='bx bxl-telegram colors'></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"> <i
+                                    class='bx bxl-facebook colors'></i></a>
+                            <a href="https://web.telegram.org/a/" target="_blank"><i
+                                    class='bx bxl-telegram colors'></i></a>
                         </div>
                     </div>
 
@@ -967,7 +1040,8 @@
                                 <h4 class="text-white">Компания</h4>
                                 <ul class="p-0">
                                     <li class="text-start">
-                                        <a class="colors position-relative active" aria-current="page" href="#brands">Главная</a>
+                                        <a class="colors position-relative active" aria-current="page"
+                                            href="#brands">Главная</a>
                                     </li>
                                     <li class="text-start">
                                         <a class="colors position-relative" href="#discover">Нам доверяют</a>
@@ -983,7 +1057,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
