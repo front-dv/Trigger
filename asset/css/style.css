@@ -229,35 +229,7 @@ img {
 
 .card-img-top {
     width: 100%;
-}
-
-.heart-group{
-    top: 1rem;
-    right: 1rem;
-    padding: .7rem 1rem;
-    background: rgba(99, 99, 99, 0.54);
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.heart-group i{
-    font-size: 20px;
-    color: rgb(255, 0, 0);
-}
-
-.heart-group .heart-hover{
-    display: none;
-}
-
-.heart-group:hover .heart-hover{
-    display: block;
-}
-
-.heart-group:hover .heart{
-    display: none;
+    height: 50%;
 }
 
 .jimmy {
