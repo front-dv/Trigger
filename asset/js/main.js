@@ -14,12 +14,12 @@ function myFunction() {
 }
 
 const from = document.querySelector('form')
-from.addEventListener('submit',(e)=>{
+from.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const captchaResponse = grecaptcha.getResponse();
 
-    if (captchaResponse.length > 0){
+    if (captchaResponse.length > 0) {
         throw new Error("Captcha not complete")
     }
 
@@ -27,12 +27,12 @@ from.addEventListener('submit',(e)=>{
     const params = new URLSearchParams(fd)
 
     fetch('http://httpbin.org/post', {
-        method:"POST",
+        method: "POST",
         body: params,
     })
-    .then(res => res.json())
+        .then(res => res.json())
     then(data => console.log(data))
-    .catch(err => console.error(err))
+        .catch(err => console.error(err))
 
 })
 
@@ -48,8 +48,8 @@ const swiper1 = new Swiper(".sample-slider", {
     scrollbar: '.swiper-scrollbar',
     autoplay: {
         delay: 2500,
-        disableOnInteraction: false,   
-      },
+        disableOnInteraction: false,
+    },
     pagination: {
         el: '.swiper-pagination',
     },
@@ -83,16 +83,16 @@ const swiper1 = new Swiper(".sample-slider", {
         768: {
             slidesPerView: 2,
             spaceBetween: 20,
-          },
+        },
         // when window width is <= 991px
-            991: {
+        991: {
             slidesPerView: 3,
             spaceBetweenSlides: 30,
         },
-          1400:{
+        1400: {
             slidesPerView: 4,
             spaceBetween: false,
-          }
+        }
     }
 })
 
@@ -100,10 +100,10 @@ const swiper2 = new Swiper(".discover-swiper", {
     slidesPerGroup: 1,
     slidesPerView: 3,
     spaceBetween: 60,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
-      },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: true,
+    // },
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -113,26 +113,26 @@ const swiper2 = new Swiper(".discover-swiper", {
         nextEl: '.slideNext-btn'
     },
 
-        // Responsive breakpoints
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 60,
-            },
-            720: {
-                slidesPerView: 1,
-                spaceBetween: 60,
-              },
-              750:{
-                slidesPerView: 2,
-                spaceBetween: 60,
-              },
-            1100:{
-                slidesPerView: 3,
-                spaceBetween: 60, 
-            }
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 60,
+        },
+        720: {
+            slidesPerView: 1,
+            spaceBetween: 60,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 60,
+        },
+        1100: {
+            slidesPerView: 3,
+            spaceBetween: 60,
         }
+    }
 });
 
 const swiper3 = new Swiper(".collection-swiper", {
@@ -146,12 +146,12 @@ const swiper3 = new Swiper(".collection-swiper", {
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-      },
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true
     },
-   // Responsive breakpoints
+    // Responsive breakpoints
     breakpoints: {
         // when window width is >= 320px
         320: {
@@ -169,7 +169,7 @@ const swiper3 = new Swiper(".collection-swiper", {
         991: {
             slidesPerView: 2,
             spaceBetween: 30,
-          },
+        },
         1200: {
             slidesPerView: 3,
             spaceBetweenSlides: 30
@@ -182,10 +182,10 @@ const swiper4 = new Swiper(".commonity-swiper", {
     centeredSlides: false,
     slidesPerGroup: 1,
     spaceBetween: 30,
-    loop:  true,
+    loop: true,
     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+        delay: 2500,
+        disableOnInteraction: false,
     },
 
     breakpoints: {
@@ -207,22 +207,22 @@ const swiper4 = new Swiper(".commonity-swiper", {
         768: {
             slidesPerView: 2,
             spaceBetween: 10,
-          },
+        },
         // when window width is <= 999px
-            999: {
+        999: {
             slidesPerView: 2,
             spaceBetweenSlides: 40
         },
-        1200:{
+        1200: {
             slidesPerView: 3,
             spaceBetweenSlides: 30
         },
-        1400:{
+        1400: {
             slidesPerView: 4,
             spaceBetweenSlides: 30
         }
     }
-  });
+});
 
 
 

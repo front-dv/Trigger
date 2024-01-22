@@ -753,3 +753,10 @@ img {
         left: -4rem;
     }
 }
+
+
+
+.card-title{
+    height: 60px;
+    border: 3px solid white;
+}
